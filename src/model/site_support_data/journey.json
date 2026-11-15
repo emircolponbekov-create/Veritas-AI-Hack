@@ -1,0 +1,293 @@
+{
+  "families": {
+    "once_through": [
+      "O",
+      "ON",
+      "OC",
+      "OF",
+      "OS"
+    ],
+    "recirculating": [
+      "R",
+      "RC",
+      "RF",
+      "RI",
+      "RN"
+    ]
+  },
+  "steps": {
+    "once_through": [
+      {
+        "id": "intake",
+        "title": "Water intake",
+        "general_explanation": "Water is withdrawn to supply cooling.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "Exact intake geometry, flow and organism capture are not provided by monthly temperatures."
+        ]
+      },
+      {
+        "id": "heat_transfer",
+        "title": "Heat transfer",
+        "general_explanation": "Cooling water takes up heat while steam is cooled back into liquid water.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "Monthly inlet/outlet averages do not show instantaneous heat flow or the path of one droplet."
+        ]
+      },
+      {
+        "id": "return",
+        "title": "Discharge and mixing",
+        "general_explanation": "Water returns to a receiving water body, where further mixing depends on local conditions.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "No downstream temperature map, mixing distance or safety conclusion is available."
+        ]
+      }
+    ],
+    "recirculating": [
+      {
+        "id": "intake",
+        "title": "Make-up water",
+        "general_explanation": "Water can be added to replace losses from a cooling loop.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "The data do not establish the exact make-up source or the amount lost."
+        ]
+      },
+      {
+        "id": "heat_transfer",
+        "title": "Heat transfer",
+        "general_explanation": "Water circulating through cooling equipment receives heat and can be cooled for reuse.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "Loop temperatures do not describe every heat exchange or any ecosystem effect."
+        ]
+      },
+      {
+        "id": "return",
+        "title": "Cooling, reuse and any release",
+        "general_explanation": "Towers or ponds can remove heat before reuse; any released water must be assessed separately.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "Do not animate the entire circulating flow as a direct river discharge; release details are not established here."
+        ]
+      }
+    ],
+    "unknown": [
+      {
+        "id": "intake",
+        "title": "Water intake — educational example",
+        "general_explanation": "Some cooling designs withdraw water; other designs use different water sources or air cooling.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "The selected system type and actual intake are not confirmed for this example."
+        ]
+      },
+      {
+        "id": "heat_transfer",
+        "title": "Heat transfer — educational example",
+        "general_explanation": "Heat is removed from the power cycle by cooling equipment; the design determines how.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "The drawing does not establish the selected plant’s equipment or cooling-water route."
+        ]
+      },
+      {
+        "id": "return",
+        "title": "Reuse or discharge — educational example",
+        "general_explanation": "Depending on the design, water may be cooled and reused, released, or partly lost by evaporation.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          }
+        ],
+        "unknowns": [
+          "This is not evidence that the selected plant uses a once-through river system or forms a particular thermal plume."
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "The drawing does not track an actual droplet or depict the real pipe layout.",
+    "No plume shape, travel time, population effect or safety verdict is calculated.",
+    "Historical cooling codes are not a current engineering inspection; mixed/unknown codes remain educational."
+  ],
+  "surry_site_context": {
+    "intake": {
+      "text": "The historical operator account describes intake from the James River. This is site context, not an independently traced CW1 pipe map.",
+      "scope": "site",
+      "source": {
+        "title": "Surry historical operator environmental report",
+        "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+        "role": "operator",
+        "locator": "section 3.1.2.1, printed pp.3-2–3-5",
+        "period": "Historical report; exact publication date not established",
+        "reviewed_on": "2026-11-15"
+      },
+      "limitation": "No assignment of a particular physical pipe to the EIA CW1/CW2 ID is established."
+    },
+    "heat_transfer": {
+      "text": "The historical operator account describes condensers and service-water cooling at Surry. It is not a present-day inspection.",
+      "scope": "site",
+      "source": {
+        "title": "Surry historical operator environmental report",
+        "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+        "role": "operator",
+        "locator": "section 3.1.2.1, printed pp.3-2–3-5",
+        "period": "Historical report; exact publication date not established",
+        "reviewed_on": "2026-11-15"
+      },
+      "limitation": "No assignment of a particular physical pipe to the EIA CW1/CW2 ID is established."
+    },
+    "return": {
+      "text": "The historical operator account describes return via a discharge canal. River-wide mixing is not derived from this description.",
+      "scope": "site",
+      "source": {
+        "title": "Surry historical operator environmental report",
+        "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+        "role": "operator",
+        "locator": "section 3.1.2.1, printed pp.3-2–3-5",
+        "period": "Historical report; exact publication date not established",
+        "reviewed_on": "2026-11-15"
+      },
+      "limitation": "No assignment of a particular physical pipe to the EIA CW1/CW2 ID is established."
+    }
+  },
+  "research_notes": [
+    "PUDL code definitions and USGS explanation read on 2026-11-15. Type families only, not subvariant geometry.",
+    "Historical operator page3-3 says upriver return; NRC2019 draft page3-3 says downstream. Direction/distance deliberately not used; needs site review.",
+    "No labels from a fictional ecological-safety model and no lifetime/health inference are used."
+  ]
+}

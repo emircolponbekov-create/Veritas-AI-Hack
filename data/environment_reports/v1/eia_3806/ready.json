@@ -1,0 +1,9 @@
+{
+  "report_version": 1,
+  "plant_id_eia": 3806,
+  "sha256": {
+    "report.en.md": "d15b59f13616aedfcffae42f5d1362ba405c84d11779b055a9819ede158c1bfd",
+    "report.en.json": "58b7f51cafa25ec12dce41485a47d86bcbaec74af54383d23829ddfe40b5f4ba",
+    "technical.json": "99729f7b319dbfed2e34f23ddb05e68071ba5ef039b53e9c0b58d4616f60f784"
+  }
+}

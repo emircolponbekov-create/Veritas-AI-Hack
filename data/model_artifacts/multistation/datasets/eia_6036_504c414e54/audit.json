@@ -1,0 +1,33 @@
+{
+  "cooling_types": [
+    "O + R",
+    "RI"
+  ],
+  "dataset_id": "eia_6036_504c414e54",
+  "excluded_months": [
+    "2010-04"
+  ],
+  "input_sha256": "d79695d157c7166d787ff76f9e127e97c927070d847fcadacd4fc2abc419f84f",
+  "limitations": [
+    "cooling_scheme_semantics_require_review",
+    "recirculating_mixed_or_unknown_cooling_codes",
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "methods": {
+    "": 1,
+    "Measured at intervals (for example, daily) with a thermometer": 12,
+    "Measured continuously with a thermometer": 179
+  },
+  "missing": {},
+  "missing_internal_months": [],
+  "review_months": {},
+  "split_counts": {
+    "test": 24,
+    "train": 143,
+    "validation": 24
+  },
+  "status": "measurements_only",
+  "validation": "identity, source, units, arithmetic, strict flags, fixed splits; no fitting or imputation"
+}

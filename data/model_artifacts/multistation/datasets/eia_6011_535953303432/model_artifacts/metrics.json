@@ -1,0 +1,104 @@
+{
+  "contract_version": "v2",
+  "feature_availability": "Same-month inlet mean available after reporting; calendar known in advance. Annual Schedule 8D publication may lag further.",
+  "fit_policy": "Scaler, Ridge and both medians fitted on 2010-2021 only; alpha chosen on 2022-2023; no refit on validation/test",
+  "identity": {
+    "cooling_id_eia": "SYS042",
+    "dataset_id": "eia_6011_535953303432",
+    "plant_id_eia": 6011
+  },
+  "imputation": "None; temperatures must be finite; eligibility excludes unknown methods",
+  "input_sha256": "5646ef0c7bf57df44173a3d271f0b0d53f7839ade742d019a8f156ea1084a3f9",
+  "model_beats_both_baselines": false,
+  "seed": "None: deterministic Ridge; no shuffle or random sampling",
+  "selected_alpha": 100.0,
+  "selection_sha256": "a7e5083df9a57047bdff572d1fa9f2ed8707c932ff50e85641feca0eed350a0f",
+  "split": {
+    "test": {
+      "end": "2025-12",
+      "n": 24,
+      "start": "2024-01"
+    },
+    "train": {
+      "end": "2021-12",
+      "n": 120,
+      "start": "2010-01"
+    },
+    "validation": {
+      "end": "2023-12",
+      "n": 24,
+      "start": "2022-01"
+    }
+  },
+  "task": "retrospective_monthly_delta_t",
+  "test_mae_c": {
+    "median_baseline_delta_t_c": 0.3009261666666668,
+    "model_delta_t_c": 0.3918773639740769,
+    "seasonal_baseline_delta_t_c": 0.3009260833333334
+  },
+  "test_months": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12"
+  ],
+  "validation_candidates": [
+    {
+      "alpha": 0.1,
+      "validation_mae_c": 0.38451988025487055
+    },
+    {
+      "alpha": 1.0,
+      "validation_mae_c": 0.379826761517392
+    },
+    {
+      "alpha": 10.0,
+      "validation_mae_c": 0.3636476937429937
+    },
+    {
+      "alpha": 100.0,
+      "validation_mae_c": 0.3117532774572879
+    }
+  ],
+  "validation_mae_c": {
+    "median_baseline_delta_t_c": 0.20833350000000006,
+    "model_delta_t_c": 0.3117532774572879,
+    "seasonal_baseline_delta_t_c": 0.25462975000000004
+  },
+  "versions": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "python": "3.12.14",
+    "scikit-learn": "1.9.1"
+  },
+  "worst_model_error": {
+    "absolute_model_error_c": 0.8434727700422764,
+    "intake_temperature_c": 6.666667,
+    "median_baseline_delta_t_c": 6.111111,
+    "model_delta_t_c": 5.823194229957724,
+    "report_month": "2025-03",
+    "reported_delta_t_c": 6.666667,
+    "seasonal_baseline_delta_t_c": 6.111111
+  }
+}

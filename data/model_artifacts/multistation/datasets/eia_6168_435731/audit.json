@@ -1,0 +1,57 @@
+{
+  "cooling_types": [
+    "O",
+    "ON"
+  ],
+  "dataset_id": "eia_6168_435731",
+  "excluded_months": [
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12"
+  ],
+  "input_sha256": "49be5f73f52501cd094161700e6ae271596fc2ec6e8dc4e1320cb4846f1834d9",
+  "limitations": [
+    "suspect_measured_rows_retained_no_automatic_exclusion",
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "methods": {
+    "MISSING": 11,
+    "Measured continuously with a thermometer": 169
+  },
+  "missing": {
+    "cooling_type_reported": 24,
+    "temperature_method": 11
+  },
+  "missing_internal_months": [],
+  "review_months": {
+    "2011-07": [
+      "nonpositive_delta"
+    ],
+    "2011-09": [
+      "nonpositive_delta"
+    ],
+    "2011-10": [
+      "nonpositive_delta"
+    ],
+    "2012-04": [
+      "nonpositive_delta"
+    ]
+  },
+  "split_counts": {
+    "test": 24,
+    "train": 121,
+    "validation": 24
+  },
+  "status": "review_required",
+  "validation": "identity, source, units, arithmetic, strict flags, fixed splits; no fitting or imputation"
+}

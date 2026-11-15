@@ -1,0 +1,31 @@
+{
+  "cooling_types": [
+    "O",
+    "ON"
+  ],
+  "dataset_id": "eia_2497_4357",
+  "excluded_months": [
+    "2013-12"
+  ],
+  "input_sha256": "d79695d157c7166d787ff76f9e127e97c927070d847fcadacd4fc2abc419f84f",
+  "limitations": [
+    "fixed_time_coverage_insufficient",
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "methods": {
+    "": 1,
+    "Measured continuously with a thermometer": 131
+  },
+  "missing": {},
+  "missing_internal_months": [],
+  "review_months": {},
+  "split_counts": {
+    "test": 0,
+    "train": 131,
+    "validation": 0
+  },
+  "status": "measurements_only",
+  "validation": "identity, source, units, arithmetic, strict flags, fixed splits; no fitting or imputation"
+}

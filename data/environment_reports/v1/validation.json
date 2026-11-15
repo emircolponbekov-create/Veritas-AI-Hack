@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-11-15T15:17:58.838334+00:00",
+  "tests_passed": 10,
+  "protected_original_files": 342,
+  "protected_original_files_changed": [],
+  "contract_previous_sha256": "213e92008a353be5d9e03495c96d3983381974e5eec9b665232d57c8215967ad",
+  "contract_previous_bytes_preserved": true,
+  "reports": {
+    "3806": {
+      "status": "partial_evidence",
+      "body_words": 354,
+      "references": 6,
+      "ready_sha256": "30d6cc5dabd1d48bc2b4983057fd063145a8f5eb1cc2ad5c63237f4025236dc9"
+    },
+    "6011": {
+      "status": "insufficient_evidence",
+      "body_words": 63,
+      "references": 0,
+      "ready_sha256": "775492b1dcab8c6f1fe78cd790c521fa3aa8858f012df6635910268bc633165a"
+    }
+  },
+  "source_review": "Codex checked primary content/locations; no subject-matter expert signoff",
+  "no_training": true,
+  "no_ui_changes": true,
+  "no_runtime_network": true
+}

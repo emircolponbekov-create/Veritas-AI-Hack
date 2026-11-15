@@ -1,0 +1,127 @@
+{
+  "cooling_types": [
+    "R",
+    "RN"
+  ],
+  "dataset_id": "eia_7722_53495445",
+  "excluded_months": [
+    "2010-09",
+    "2011-01",
+    "2011-02",
+    "2011-03",
+    "2011-04",
+    "2011-05",
+    "2011-06",
+    "2011-07",
+    "2011-08",
+    "2011-09",
+    "2011-10",
+    "2011-11",
+    "2011-12",
+    "2023-05"
+  ],
+  "input_sha256": "d79695d157c7166d787ff76f9e127e97c927070d847fcadacd4fc2abc419f84f",
+  "limitations": [
+    "suspect_measured_rows_retained_no_automatic_exclusion",
+    "recirculating_mixed_or_unknown_cooling_codes",
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "methods": {
+    "": 12,
+    "Estimated based on plant design characteristics": 1,
+    "Measured at intervals (for example, daily) with a thermometer": 11,
+    "Measured continuously with a thermometer": 167,
+    "Other (provide explanation in Schedule 9)": 1
+  },
+  "missing": {},
+  "missing_internal_months": [],
+  "review_months": {
+    "2012-01": [
+      "nonpositive_delta"
+    ],
+    "2012-02": [
+      "nonpositive_delta"
+    ],
+    "2012-03": [
+      "nonpositive_delta"
+    ],
+    "2012-06": [
+      "nonpositive_delta"
+    ],
+    "2012-07": [
+      "nonpositive_delta"
+    ],
+    "2012-09": [
+      "nonpositive_delta"
+    ],
+    "2012-10": [
+      "nonpositive_delta"
+    ],
+    "2012-12": [
+      "nonpositive_delta"
+    ],
+    "2014-04": [
+      "nonpositive_delta"
+    ],
+    "2014-11": [
+      "nonpositive_delta"
+    ],
+    "2014-12": [
+      "nonpositive_delta"
+    ],
+    "2015-01": [
+      "nonpositive_delta"
+    ],
+    "2015-02": [
+      "nonpositive_delta"
+    ],
+    "2015-03": [
+      "nonpositive_delta"
+    ],
+    "2015-04": [
+      "nonpositive_delta"
+    ],
+    "2015-06": [
+      "nonpositive_delta"
+    ],
+    "2015-07": [
+      "nonpositive_delta"
+    ],
+    "2015-08": [
+      "nonpositive_delta"
+    ],
+    "2015-09": [
+      "nonpositive_delta"
+    ],
+    "2015-10": [
+      "nonpositive_delta"
+    ],
+    "2015-11": [
+      "nonpositive_delta"
+    ],
+    "2016-04": [
+      "nonpositive_delta"
+    ],
+    "2016-09": [
+      "nonpositive_delta"
+    ],
+    "2017-04": [
+      "nonpositive_delta"
+    ],
+    "2018-08": [
+      "nonpositive_delta"
+    ],
+    "2019-09": [
+      "nonpositive_delta"
+    ]
+  },
+  "split_counts": {
+    "test": 24,
+    "train": 131,
+    "validation": 23
+  },
+  "status": "review_required",
+  "validation": "identity, source, units, arithmetic, strict flags, fixed splits; no fitting or imputation"
+}

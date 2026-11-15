@@ -1,0 +1,31 @@
+{
+  "identity": {
+    "cooling_id_eia": "UNIT2",
+    "dataset_id": "eia_6000_554e495432",
+    "plant_id_eia": 6000
+  },
+  "input_sha256": "d79695d157c7166d787ff76f9e127e97c927070d847fcadacd4fc2abc419f84f",
+  "limitations": [
+    "missing_temperatures_retained_and_ineligible",
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "provenance": {
+    "inventory_path": "data/incoming/collected-20261114-150548/INVENTORY.md",
+    "inventory_sha256": "8f17224e79921cdd79592233660a2386754fd0df098a8cc02af6eed63326c605",
+    "license": "CC-BY-4.0 (PUDL); public EIA data with acknowledgment",
+    "raw_path": "data/incoming/collected-20261114-150548/raw/cooling.parquet",
+    "raw_sha256": "d79695d157c7166d787ff76f9e127e97c927070d847fcadacd4fc2abc419f84f",
+    "source_units": "degF",
+    "source_url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/nightly/_core_eia923__monthly_cooling_system_information.parquet",
+    "table": "_core_eia923__monthly_cooling_system_information",
+    "units": "degC"
+  },
+  "registry_split_counts_match": true,
+  "split_counts": {
+    "test": 12,
+    "train": 68,
+    "validation": 24
+  }
+}

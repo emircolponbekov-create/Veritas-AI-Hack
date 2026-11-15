@@ -1,0 +1,96 @@
+{
+  "contract_version": "v1",
+  "task": "retrospective_monthly_delta_t",
+  "feature_availability": "Same-month inlet mean available after reporting; calendar known in advance. Annual Schedule 8D publication may lag further.",
+  "split": {
+    "train": {
+      "n": 142,
+      "start": "2010-01",
+      "end": "2021-11"
+    },
+    "validation": {
+      "n": 24,
+      "start": "2022-01",
+      "end": "2023-12"
+    },
+    "test": {
+      "n": 22,
+      "start": "2024-01",
+      "end": "2025-12"
+    }
+  },
+  "selected_alpha": 100.0,
+  "validation_candidates": [
+    {
+      "alpha": 0.1,
+      "validation_mae_c": 1.7522601991865858
+    },
+    {
+      "alpha": 1.0,
+      "validation_mae_c": 1.7503209424837263
+    },
+    {
+      "alpha": 10.0,
+      "validation_mae_c": 1.7427877355168138
+    },
+    {
+      "alpha": 100.0,
+      "validation_mae_c": 1.7153936854873024
+    }
+  ],
+  "validation_mae_c": {
+    "median_baseline_delta_t_c": 1.7592592916666663,
+    "seasonal_baseline_delta_t_c": 1.8287036666666665,
+    "model_delta_t_c": 1.7153936854873024
+  },
+  "test_mae_c": {
+    "median_baseline_delta_t_c": 1.994949545454545,
+    "seasonal_baseline_delta_t_c": 2.045454477272727,
+    "model_delta_t_c": 1.8493300866917195
+  },
+  "model_beats_both_baselines": true,
+  "test_months": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-12"
+  ],
+  "worst_model_error": {
+    "report_month": "2025-12",
+    "intake_temperature_c": 6.111111,
+    "reported_delta_t_c": 6.666667,
+    "median_baseline_delta_t_c": 10.0,
+    "seasonal_baseline_delta_t_c": 10.555556,
+    "model_delta_t_c": 11.02885792369898,
+    "absolute_model_error_c": 4.36219092369898
+  },
+  "input_sha256": "49d0ccdb17bd32e1155a6001fac24d19785851fe1280d157098788ac1289c82a",
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "seed": "None: deterministic Ridge; no shuffle or random sampling",
+  "imputation": "None; temperatures must be finite; eligibility excludes unknown methods",
+  "fit_policy": "Scaler, Ridge and both medians fitted on 2010-2021 only; alpha chosen on 2022-2023; no refit on validation/test"
+}

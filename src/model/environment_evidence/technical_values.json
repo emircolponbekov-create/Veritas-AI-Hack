@@ -1,0 +1,41 @@
+{
+  "vdh_sps_w1_week13": {
+    "reported_value": 121171,
+    "reported_uncertainty": 1658,
+    "unit": "pCi/L",
+    "analyte": "H3",
+    "sample_point": "SPS-W-1 discharge canal",
+    "week_start": "2024-03-25",
+    "week_end": "2024-04-01",
+    "locator": "VDH 2024 report p.24 Water table; rendered page checked",
+    "not_a_drinking_water_measurement": true,
+    "no_legal_limit_or_health_comparison": true
+  },
+  "epa_surry_historical": {
+    "survival_percent_reported": 93.8,
+    "period": "1970s",
+    "locator": "EPA 2001 pp.5-4–5-5/A-6",
+    "operator_rounded_percent": 94,
+    "interpretation": "Rounding compatible; survival of captured fish is not population impact or delayed-mortality proof"
+  },
+  "ipcc_2014": {
+    "unit": "gCO2eq/kWh",
+    "nuclear_lifecycle_min_median_max": [
+      3.7,
+      12,
+      110
+    ],
+    "coal_lifecycle_min_median_max": [
+      740,
+      820,
+      910
+    ],
+    "gas_cc_lifecycle_min_median_max": [
+      410,
+      490,
+      650
+    ],
+    "locator": "IPCC AR5 WGIII AnnexIII TableA.III.2 p.1335",
+    "not_station_emissions": true
+  }
+}

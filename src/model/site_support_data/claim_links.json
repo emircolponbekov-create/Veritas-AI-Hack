@@ -1,0 +1,859 @@
+{
+  "3806": {
+    "report_sha256": "58b7f51cafa25ec12dce41485a47d86bcbaec74af54383d23829ddfe40b5f4ba",
+    "evidence_index_sha256": "6ee59eb6327dff083792a31b7009aab3d5996f67a021242f582a2bce9354b7ca",
+    "reviewed_on": "2026-11-15",
+    "review_note": "Every summary/section span reviewed explicitly against the existing technical ledger. Scope/gap language is not promoted to a physical fact.",
+    "statements": [
+      {
+        "statement_id": "eia_3806.summary.water",
+        "statement": "Historical records document warmer cooling-water discharge from CW1.",
+        "target": "summary",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          59
+        ],
+        "display_span": "Historical records document warmer cooling-water discharge ",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "cw1_warmer"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "eia_surry_cw1",
+            "locator": "Local CSV: plant_id_eia=3806, cooling_id_eia=CW1; eligible_measured rows; intake/discharge monthly means",
+            "support_note": "Existing adapter verifies original Fahrenheit fields, conversions, source identity and positive reported differences on all 188 eligible months",
+            "public_locator": "Surry CW1 measured monthly reports, 2010–2025",
+            "title": "EIA/PUDL Surry CW1 monthly records, 2010–2025",
+            "url": "https://data.catalyst.coop/preview/pudl/_core_eia923__monthly_cooling_system_information",
+            "role": "government_reports_via_pudl"
+          }
+        ],
+        "period": {
+          "label": "Eligible reporting months 2010–2025",
+          "start": "2010-01-01",
+          "end": "2025-12-31"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "system",
+          "plant_id_eia": 3806,
+          "cooling_id_eia": "CW1"
+        },
+        "limitation": "Source-reported means, not independently remeasured sensors; four ineligible months retained No synchronized flow, river plume geometry, temperature peaks or exposure",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.summary.fish",
+        "statement": "Historical records document fish caught by the water intake.",
+        "target": "summary",
+        "paragraph_index": 0,
+        "span": [
+          59,
+          95
+        ],
+        "display_span": "and fish caught by the water intake.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "epa_intakes_2001",
+            "locator": "Chapter 5 pp. 5-4–5-5; Appendix A p. A-6, Surry paragraph",
+            "support_note": "Surry-specific impingement-survival statement and modified screen/fish return description; study-level result, not present-day population assessment",
+            "public_locator": "Surry fish studies, pages 5-4–5-5 and A-6",
+            "title": "US EPA cooling-water intake study (2001), pp. 5-4–5-5 and A-6",
+            "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20002QWR.TXT",
+            "role": "regulator_synthesis"
+          }
+        ],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.summary.boundary",
+        "statement": "They do not establish an overall environmental benefit, harm or safety verdict, or describe today’s conditions.",
+        "target": "summary",
+        "paragraph_index": 0,
+        "span": [
+          96,
+          207
+        ],
+        "display_span": "They do not establish an overall environmental benefit, harm or safety verdict, or describe today’s conditions.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.cw1_warmer",
+        "statement": "In the reviewed 2010–2025 monthly record, water leaving cooling system CW1 was warmer than water entering it.",
+        "target": "water",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          109
+        ],
+        "display_span": "In the reviewed 2010–2025 monthly record, water leaving cooling system CW1 was warmer than water entering it.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "cw1_warmer"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "eia_surry_cw1",
+            "locator": "Local CSV: plant_id_eia=3806, cooling_id_eia=CW1; eligible_measured rows; intake/discharge monthly means",
+            "support_note": "Existing adapter verifies original Fahrenheit fields, conversions, source identity and positive reported differences on all 188 eligible months",
+            "public_locator": "Surry CW1 measured monthly reports, 2010–2025",
+            "title": "EIA/PUDL Surry CW1 monthly records, 2010–2025",
+            "url": "https://data.catalyst.coop/preview/pudl/_core_eia923__monthly_cooling_system_information",
+            "role": "government_reports_via_pudl"
+          }
+        ],
+        "period": {
+          "label": "Eligible reporting months 2010–2025",
+          "start": "2010-01-01",
+          "end": "2025-12-31"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "system",
+          "plant_id_eia": 3806,
+          "cooling_id_eia": "CW1"
+        },
+        "limitation": "Source-reported means, not independently remeasured sensors; four ineligible months retained No synchronized flow, river plume geometry, temperature peaks or exposure",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.cw1_scope",
+        "statement": "This confirms heating across that system, not the temperature change of the whole James River.",
+        "target": "water",
+        "paragraph_index": 0,
+        "span": [
+          110,
+          204
+        ],
+        "display_span": "This confirms heating across that system, not the temperature change of the whole James River.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "cw1_warmer"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "eia_surry_cw1",
+            "locator": "Local CSV: plant_id_eia=3806, cooling_id_eia=CW1; eligible_measured rows; intake/discharge monthly means",
+            "support_note": "Existing adapter verifies original Fahrenheit fields, conversions, source identity and positive reported differences on all 188 eligible months",
+            "public_locator": "Surry CW1 measured monthly reports, 2010–2025",
+            "title": "EIA/PUDL Surry CW1 monthly records, 2010–2025",
+            "url": "https://data.catalyst.coop/preview/pudl/_core_eia923__monthly_cooling_system_information",
+            "role": "government_reports_via_pudl"
+          }
+        ],
+        "period": {
+          "label": "Eligible reporting months 2010–2025",
+          "start": "2010-01-01",
+          "end": "2025-12-31"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "system",
+          "plant_id_eia": 3806,
+          "cooling_id_eia": "CW1"
+        },
+        "limitation": "Source-reported means, not independently remeasured sensors; four ineligible months retained No synchronized flow, river plume geometry, temperature peaks or exposure",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.tritium_detected",
+        "statement": "State monitoring in 2024 also recorded tritium, a radioactive form of hydrogen, in a discharge-canal water sample.",
+        "target": "water",
+        "paragraph_index": 1,
+        "span": [
+          0,
+          114
+        ],
+        "display_span": "State monitoring in 2024 also recorded tritium, a radioactive form of hydrogen, in a discharge-canal water sample.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "vdh_h3"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "vdh_2024",
+            "locator": "p. 3 location SPS-W-1; p. 24 Week 13 Water table, H3 column and footnote",
+            "support_note": "SPS-W-1 is discharge canal, not drinking water; table reports detected H3; footnote cites a tank release confirmed by station personnel",
+            "public_locator": "Discharge-canal sample, page 24; location key, page 3; laboratory explanation, page 10",
+            "title": "Virginia Department of Health environmental monitoring, 2024",
+            "url": "https://www.vdh.virginia.gov/content/uploads/sites/7/2025/05/2024-Final-Report.pdf",
+            "role": "state_monitoring"
+          }
+        ],
+        "period": {
+          "label": "VDH Week 13, 25 March–1 April 2024",
+          "start": "2024-03-25",
+          "end": "2024-04-01"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "One sampled location/period; no drinking-water exposure assumption No dose reconstruction, toxicity outcome or compliance conclusion State measurement independent of operator; release explanation originates with operator",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.tritium_no_harm_inference",
+        "statement": "This is a separate finding from temperature; it is not by itself evidence of illness or ecological harm.",
+        "target": "water",
+        "paragraph_index": 1,
+        "span": [
+          115,
+          219
+        ],
+        "display_span": "This is a separate finding from temperature; it is not by itself evidence of illness or ecological harm.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "vdh_h3"
+        ],
+        "evidence_kind": "observation",
+        "sources": [],
+        "period": {
+          "label": "VDH Week 13, 25 March–1 April 2024",
+          "start": "2024-03-25",
+          "end": "2024-04-01"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "One sampled location/period; no drinking-water exposure assumption No dose reconstruction, toxicity outcome or compliance conclusion State measurement independent of operator; release explanation originates with operator",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.river_chemistry_gap",
+        "statement": "The reviewed collection does not establish current river-wide heating or chemical damage.",
+        "target": "water",
+        "paragraph_index": 2,
+        "span": [
+          0,
+          89
+        ],
+        "display_span": "The reviewed collection does not establish current river-wide heating or chemical damage.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.nondetection_boundary",
+        "statement": "A laboratory nondetection would not mean that a substance is entirely absent.",
+        "target": "water",
+        "paragraph_index": 2,
+        "span": [
+          90,
+          167
+        ],
+        "display_span": "A laboratory nondetection would not mean that a substance is entirely absent.",
+        "text_role": "method_explanation",
+        "parent_claim_ids": [
+          "vdh_h3"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "vdh_2024",
+            "locator": "p. 10, No Detectable Results explanation",
+            "support_note": "Detection is conditional on analytical identification criteria; not an assurance of literal zero",
+            "public_locator": "Discharge-canal sample, page 24; location key, page 3; laboratory explanation, page 10",
+            "title": "Virginia Department of Health environmental monitoring, 2024",
+            "url": "https://www.vdh.virginia.gov/content/uploads/sites/7/2025/05/2024-Final-Report.pdf",
+            "role": "state_monitoring"
+          }
+        ],
+        "period": {
+          "label": "VDH Week 13, 25 March–1 April 2024",
+          "start": "2024-03-25",
+          "end": "2024-04-01"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "One sampled location/period; no drinking-water exposure assumption No dose reconstruction, toxicity outcome or compliance conclusion State measurement independent of operator; release explanation originates with operator",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.intake.historical_capture_survival",
+        "statement": "EPA summarized 1970s Surry studies in which fish were caught against intake screens and most survived.",
+        "target": "animals_plants",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          102
+        ],
+        "display_span": "EPA summarized 1970s Surry studies in which fish were caught against intake screens and most survived.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "epa_intakes_2001",
+            "locator": "Chapter 5 pp. 5-4–5-5; Appendix A p. A-6, Surry paragraph",
+            "support_note": "Surry-specific impingement-survival statement and modified screen/fish return description; study-level result, not present-day population assessment",
+            "public_locator": "Surry fish studies, pages 5-4–5-5 and A-6",
+            "title": "US EPA cooling-water intake study (2001), pp. 5-4–5-5 and A-6",
+            "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20002QWR.TXT",
+            "role": "regulator_synthesis"
+          }
+        ],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.intake.no_harmlessness_inference",
+        "statement": "That documents a physical pressure and historical fish-return performance, not proof that the intake was harmless.",
+        "target": "animals_plants",
+        "paragraph_index": 0,
+        "span": [
+          103,
+          217
+        ],
+        "display_span": "That documents a physical pressure and historical fish-return performance, not proof that the intake was harmless.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.land.evidence_gap",
+        "statement": "For land animals, plants and habitats, this reviewed collection lacks enough field evidence to establish a positive or negative effect of the station.",
+        "target": "animals_plants",
+        "paragraph_index": 1,
+        "span": [
+          0,
+          150
+        ],
+        "display_span": "For land animals, plants and habitats, this reviewed collection lacks enough field evidence to establish a positive or negative effect of the station.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.intake.no_current_counts",
+        "statement": "Historical fish findings must not be presented as current counts.",
+        "target": "animals_plants",
+        "paragraph_index": 1,
+        "span": [
+          151,
+          216
+        ],
+        "display_span": "Historical fish findings must not be presented as current counts.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.intake.operator_population_statement",
+        "statement": "The operator also reported no detectable local fish-population impact in older studies.",
+        "target": "animals_plants",
+        "paragraph_index": 2,
+        "span": [
+          0,
+          87
+        ],
+        "display_span": "The operator also reported no detectable local fish-population impact in older studies.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; study reference p. 6-11",
+            "support_note": "Operator reports both organism capture and no detected population effect; these endpoints are not interchangeable",
+            "public_locator": "Historical operator account, pages 6-3 and 6-11",
+            "title": "Surry historical applicant environmental report, section 6.3",
+            "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+            "role": "operator"
+          }
+        ],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.intake.endpoint_boundary",
+        "statement": "That addresses a different outcome: it does not mean that no individual organisms were caught or lost.",
+        "target": "animals_plants",
+        "paragraph_index": 2,
+        "span": [
+          88,
+          190
+        ],
+        "display_span": "That addresses a different outcome: it does not mean that no individual organisms were caught or lost.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.people.health_living_gap",
+        "statement": "Insufficient evidence for this station to draw a conclusion about effects on health or living conditions.",
+        "target": "people",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          105
+        ],
+        "display_span": "Insufficient evidence for this station to draw a conclusion about effects on health or living conditions.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.people.missing_assessments",
+        "statement": "No suitable exposure history, health-outcome study or independently checked local-benefit assessment has been reviewed here.",
+        "target": "people",
+        "paragraph_index": 0,
+        "span": [
+          106,
+          230
+        ],
+        "display_span": "No suitable exposure history, health-outcome study or independently checked local-benefit assessment has been reviewed here.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.people.sampling_not_health",
+        "statement": "Environmental sampling alone cannot answer those questions.",
+        "target": "people",
+        "paragraph_index": 0,
+        "span": [
+          231,
+          290
+        ],
+        "display_span": "Environmental sampling alone cannot answer those questions.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.climate.general_lifecycle_context",
+        "statement": "General context only: a 2014 IPCC review reports lower greenhouse-gas emissions over the full nuclear electricity supply chain than for coal or gas.",
+        "target": "climate",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          148
+        ],
+        "display_span": "General context only: a 2014 IPCC review reports lower greenhouse-gas emissions over the full nuclear electricity supply chain than for coal or gas.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "ipcc_context"
+        ],
+        "evidence_kind": "general_context",
+        "sources": [
+          {
+            "source_id": "ipcc_ar5",
+            "locator": "Annex III p. 1335, Table A.III.2; lifecycle columns, Nuclear / Coal-PC / Gas-Combined-Cycle rows",
+            "support_note": "Technology literature comparison only; not an operating-station inventory or a displacement counterfactual",
+            "public_locator": "Electricity supply-chain comparison, table on page 1335",
+            "title": "IPCC 2014 electricity life-cycle review, Table A.III.2",
+            "url": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf",
+            "role": "scientific_assessment"
+          }
+        ],
+        "period": {
+          "label": "IPCC 2014 literature assessment; not a Surry observation period",
+          "start": null,
+          "end": null
+        },
+        "geography": "Global technology literature; not measurements from Surry or its water body",
+        "scope": {
+          "level": "general",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Global literature context, not station-specific attribution No verified site generation-linked lifecycle inventory or replacement-generation counterfactual",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.climate.not_station_emissions",
+        "statement": "This possible climate advantage is not a measurement of Surry’s emissions or emissions avoided.",
+        "target": "climate",
+        "paragraph_index": 0,
+        "span": [
+          149,
+          244
+        ],
+        "display_span": "This possible climate advantage is not a measurement of Surry’s emissions or emissions avoided.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "ipcc_context"
+        ],
+        "evidence_kind": "general_context",
+        "sources": [],
+        "period": {
+          "label": "IPCC 2014 literature assessment; not a Surry observation period",
+          "start": null,
+          "end": null
+        },
+        "geography": "Global technology literature; not measurements from Surry or its water body",
+        "scope": {
+          "level": "general",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Global literature context, not station-specific attribution No verified site generation-linked lifecycle inventory or replacement-generation counterfactual",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.climate.site_gap",
+        "statement": "No station-specific climate benefit or harm is established by this report.",
+        "target": "climate",
+        "paragraph_index": 1,
+        "span": [
+          0,
+          74
+        ],
+        "display_span": "No station-specific climate benefit or harm is established by this report.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.climate.scenarios_not_observations",
+        "statement": "User-entered emissions scenarios elsewhere in the project are illustrations, not measured Surry outcomes.",
+        "target": "climate",
+        "paragraph_index": 1,
+        "span": [
+          75,
+          180
+        ],
+        "display_span": "User-entered emissions scenarios elsewhere in the project are illustrations, not measured Surry outcomes.",
+        "text_role": "method_explanation",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.unknowns.monitoring_needed",
+        "statement": "We still need current intake surveys, receiving-water measurements, habitat studies, chemical tests and appropriate exposure assessments.",
+        "target": "unknowns",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          137
+        ],
+        "display_span": "We still need current intake surveys, receiving-water measurements, habitat studies, chemical tests and appropriate exposure assessments.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.unknowns.no_score",
+        "statement": "The evidence does not support a single environmental score.",
+        "target": "unknowns",
+        "paragraph_index": 0,
+        "span": [
+          138,
+          197
+        ],
+        "display_span": "The evidence does not support a single environmental score.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.unknowns.absence_not_safety",
+        "statement": "Missing observations and a failure to detect harm must never be read as proof of safety.",
+        "target": "unknowns",
+        "paragraph_index": 0,
+        "span": [
+          198,
+          286
+        ],
+        "display_span": "Missing observations and a failure to detect harm must never be read as proof of safety.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-15",
+  "reviewer": "Codex source-support check; no expert signoff",
+  "note": "Hashes lock this reviewed local curation, not the truth of external documents. Changes require renewed source-to-claim review.",
+  "sha256": {
+    "source_catalog.json": "ba823d81b7514fa01f3ea95a82629eb575426597b9434817a537a1196af825c9",
+    "claims.json": "2c140e682c865375fcf3f391fced285e2d81f60e4ac8f8def0882217798eedc3",
+    "technical_values.json": "74d999a3cfb7f6b775e9cf27e80539b7330122f421f7ebbc194bacd7562dbcdc"
+  }
+}

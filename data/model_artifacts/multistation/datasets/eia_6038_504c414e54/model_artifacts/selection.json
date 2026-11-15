@@ -1,0 +1,72 @@
+{
+  "alpha_grid": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "features": [
+    "intake_temperature_c",
+    "month_sin",
+    "month_cos"
+  ],
+  "identity": {
+    "cooling_id_eia": "PLANT",
+    "dataset_id": "eia_6038_504c414e54",
+    "plant_id_eia": 6038
+  },
+  "input_sha256": "3074d20d655131c694987f2d69e4046b473655a26b692b65baeb9ee63bd952ba",
+  "locked_at_utc": "2026-11-14T16:53:09.413695+00:00",
+  "locked_before_test": true,
+  "pipeline_sha256": "b53aec7f6f1870eec9195822e71509c2785e2bf4f92d8c8ec0698378948e9a5a",
+  "ridge_coef": [
+    -0.8179786849616802,
+    -0.38684391474955054,
+    -0.19226202931056055
+  ],
+  "ridge_intercept": 8.089225537878786,
+  "scaler_mean": [
+    19.983165015151517,
+    -2.0185873175002847e-17,
+    -5.0464682937507114e-17
+  ],
+  "scaler_scale": [
+    6.457485404229472,
+    0.7071067811865476,
+    0.7071067811865476
+  ],
+  "selected_alpha": 1.0,
+  "train_median_c": 7.777778,
+  "train_monthly_medians_c": {
+    "1": 9.444444,
+    "10": 7.222222,
+    "11": 7.777778,
+    "12": 9.444444,
+    "2": 8.888889,
+    "3": 8.333333,
+    "4": 7.222222,
+    "5": 7.777778,
+    "6": 7.777778,
+    "7": 7.777778,
+    "8": 7.777778,
+    "9": 7.777778
+  },
+  "validation_candidates": [
+    {
+      "alpha": 0.1,
+      "validation_mae_c": 0.8059820921578801
+    },
+    {
+      "alpha": 1.0,
+      "validation_mae_c": 0.8049230322665508
+    },
+    {
+      "alpha": 10.0,
+      "validation_mae_c": 0.8054216319078827
+    },
+    {
+      "alpha": 100.0,
+      "validation_mae_c": 0.8064521058123718
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "reviewed_on": "2026-11-15",
+  "reviewer": "Codex content/claim-span review; no expert signoff",
+  "sha256": {
+    "journey.json": "680a7fe38a4b580bd1a998c6e80ef1e9e06094bde5ff48e453d091cd39ccc364",
+    "claim_links.json": "0a942ae000b224c2a4edc46d7a6de0d3318155046ff7c4ad9dac6dec1affa78d"
+  }
+}

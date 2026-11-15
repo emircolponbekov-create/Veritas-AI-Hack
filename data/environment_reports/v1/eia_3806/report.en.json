@@ -1,0 +1,185 @@
+{
+  "report_version": 1,
+  "plant_id_eia": 3806,
+  "station_name": "Surry",
+  "language": "en",
+  "status": "partial_evidence",
+  "as_of": "2026-11-15",
+  "period_label": "Water: 2010–2025; fish: 1970s studies summarized in 2001; radiation sample: March–April 2024; general climate review: 2014. These are historical, different periods.",
+  "summary": "Historical records document warmer cooling-water discharge and fish caught by the water intake. They do not establish an overall environmental benefit, harm or safety verdict, or describe today’s conditions.",
+  "sections": [
+    {
+      "id": "water",
+      "title": "Water",
+      "status": "partial_evidence",
+      "paragraphs": [
+        "In the reviewed 2010–2025 monthly record, water leaving cooling system CW1 was warmer than water entering it. This confirms heating across that system, not the temperature change of the whole James River.",
+        "State monitoring in 2024 also recorded tritium, a radioactive form of hydrogen, in a discharge-canal water sample. This is a separate finding from temperature; it is not by itself evidence of illness or ecological harm.",
+        "The reviewed collection does not establish current river-wide heating or chemical damage. A laboratory nondetection would not mean that a substance is entirely absent."
+      ],
+      "claim_ids": [
+        "cw1_warmer",
+        "vdh_h3"
+      ],
+      "references": [
+        {
+          "source_id": "eia_surry_cw1",
+          "locator": "Local CSV: plant_id_eia=3806, cooling_id_eia=CW1; eligible_measured rows; intake/discharge monthly means",
+          "support_note": "Existing adapter verifies original Fahrenheit fields, conversions, source identity and positive reported differences on all 188 eligible months",
+          "public_locator": "Surry CW1 measured monthly reports, 2010–2025",
+          "title": "EIA/PUDL Surry CW1 monthly records, 2010–2025",
+          "url": "https://data.catalyst.coop/preview/pudl/_core_eia923__monthly_cooling_system_information",
+          "role": "government_reports_via_pudl",
+          "claim_id": "cw1_warmer"
+        },
+        {
+          "source_id": "vdh_2024",
+          "locator": "p. 3 location SPS-W-1; p. 24 Week 13 Water table, H3 column and footnote",
+          "support_note": "SPS-W-1 is discharge canal, not drinking water; table reports detected H3; footnote cites a tank release confirmed by station personnel",
+          "public_locator": "Discharge-canal sample, page 24; location key, page 3; laboratory explanation, page 10",
+          "title": "Virginia Department of Health environmental monitoring, 2024",
+          "url": "https://www.vdh.virginia.gov/content/uploads/sites/7/2025/05/2024-Final-Report.pdf",
+          "role": "state_monitoring",
+          "claim_id": "vdh_h3"
+        },
+        {
+          "source_id": "vdh_2024",
+          "locator": "p. 10, No Detectable Results explanation",
+          "support_note": "Detection is conditional on analytical identification criteria; not an assurance of literal zero",
+          "public_locator": "Discharge-canal sample, page 24; location key, page 3; laboratory explanation, page 10",
+          "title": "Virginia Department of Health environmental monitoring, 2024",
+          "url": "https://www.vdh.virginia.gov/content/uploads/sites/7/2025/05/2024-Final-Report.pdf",
+          "role": "state_monitoring",
+          "claim_id": "vdh_h3"
+        }
+      ],
+      "periods": [
+        {
+          "label": "Eligible reporting months 2010–2025",
+          "start": "2010-01-01",
+          "end": "2025-12-31"
+        },
+        {
+          "label": "VDH Week 13, 25 March–1 April 2024",
+          "start": "2024-03-25",
+          "end": "2024-04-01"
+        }
+      ],
+      "limitations": [
+        "Source-reported means, not independently remeasured sensors; four ineligible months retained",
+        "No synchronized flow, river plume geometry, temperature peaks or exposure",
+        "One sampled location/period; no drinking-water exposure assumption",
+        "No dose reconstruction, toxicity outcome or compliance conclusion",
+        "State measurement independent of operator; release explanation originates with operator"
+      ]
+    },
+    {
+      "id": "animals_plants",
+      "title": "Animals and plants",
+      "status": "partial_evidence",
+      "paragraphs": [
+        "EPA summarized 1970s Surry studies in which fish were caught against intake screens and most survived. That documents a physical pressure and historical fish-return performance, not proof that the intake was harmless.",
+        "For land animals, plants and habitats, this reviewed collection lacks enough field evidence to establish a positive or negative effect of the station. Historical fish findings must not be presented as current counts.",
+        "The operator also reported no detectable local fish-population impact in older studies. That addresses a different outcome: it does not mean that no individual organisms were caught or lost."
+      ],
+      "claim_ids": [
+        "epa_fish"
+      ],
+      "references": [
+        {
+          "source_id": "epa_intakes_2001",
+          "locator": "Chapter 5 pp. 5-4–5-5; Appendix A p. A-6, Surry paragraph",
+          "support_note": "Surry-specific impingement-survival statement and modified screen/fish return description; study-level result, not present-day population assessment",
+          "public_locator": "Surry fish studies, pages 5-4–5-5 and A-6",
+          "title": "US EPA cooling-water intake study (2001), pp. 5-4–5-5 and A-6",
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20002QWR.TXT",
+          "role": "regulator_synthesis",
+          "claim_id": "epa_fish"
+        },
+        {
+          "source_id": "operator_legacy",
+          "locator": "section 6.3 p. 6-3; study reference p. 6-11",
+          "support_note": "Operator reports both organism capture and no detected population effect; these endpoints are not interchangeable",
+          "public_locator": "Historical operator account, pages 6-3 and 6-11",
+          "title": "Surry historical applicant environmental report, section 6.3",
+          "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+          "role": "operator",
+          "claim_id": "epa_fish"
+        }
+      ],
+      "periods": [
+        {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        }
+      ],
+      "limitations": [
+        "Underlying historical industry studies; EPA synthesis is not a new independent field measurement",
+        "Survival of captured fish does not quantify all larvae, delayed mortality or population changes",
+        "No causal improvement versus a matched unmodified intake is established here"
+      ]
+    },
+    {
+      "id": "people",
+      "title": "People",
+      "status": "insufficient_evidence",
+      "paragraphs": [
+        "Insufficient evidence for this station to draw a conclusion about effects on health or living conditions. No suitable exposure history, health-outcome study or independently checked local-benefit assessment has been reviewed here. Environmental sampling alone cannot answer those questions."
+      ],
+      "claim_ids": [],
+      "references": [],
+      "periods": [],
+      "limitations": []
+    },
+    {
+      "id": "climate",
+      "title": "Climate",
+      "status": "context_only",
+      "paragraphs": [
+        "General context only: a 2014 IPCC review reports lower greenhouse-gas emissions over the full nuclear electricity supply chain than for coal or gas. This possible climate advantage is not a measurement of Surry’s emissions or emissions avoided.",
+        "No station-specific climate benefit or harm is established by this report. User-entered emissions scenarios elsewhere in the project are illustrations, not measured Surry outcomes."
+      ],
+      "claim_ids": [
+        "ipcc_context"
+      ],
+      "references": [
+        {
+          "source_id": "ipcc_ar5",
+          "locator": "Annex III p. 1335, Table A.III.2; lifecycle columns, Nuclear / Coal-PC / Gas-Combined-Cycle rows",
+          "support_note": "Technology literature comparison only; not an operating-station inventory or a displacement counterfactual",
+          "public_locator": "Electricity supply-chain comparison, table on page 1335",
+          "title": "IPCC 2014 electricity life-cycle review, Table A.III.2",
+          "url": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf",
+          "role": "scientific_assessment",
+          "claim_id": "ipcc_context"
+        }
+      ],
+      "periods": [
+        {
+          "label": "IPCC 2014 literature assessment; not a Surry observation period",
+          "start": null,
+          "end": null
+        }
+      ],
+      "limitations": [
+        "Global literature context, not station-specific attribution",
+        "No verified site generation-linked lifecycle inventory or replacement-generation counterfactual"
+      ]
+    },
+    {
+      "id": "unknowns",
+      "title": "What remains unknown",
+      "status": "insufficient_evidence",
+      "paragraphs": [
+        "We still need current intake surveys, receiving-water measurements, habitat studies, chemical tests and appropriate exposure assessments. The evidence does not support a single environmental score. Missing observations and a failure to detect harm must never be read as proof of safety."
+      ],
+      "claim_ids": [],
+      "references": [],
+      "periods": [],
+      "limitations": []
+    }
+  ],
+  "expert_review_status": "not_performed",
+  "method": "curated_evidence_rules_not_trained_safety_model"
+}

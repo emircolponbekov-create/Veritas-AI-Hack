@@ -1,0 +1,56 @@
+{
+  "cooling_types": [
+    "R",
+    "RN"
+  ],
+  "dataset_id": "eia_6023_504c414e54",
+  "excluded_months": [
+    "2012-01",
+    "2012-02",
+    "2012-03",
+    "2012-04",
+    "2012-05",
+    "2012-06",
+    "2012-07",
+    "2012-08",
+    "2012-09",
+    "2012-10",
+    "2012-11",
+    "2012-12",
+    "2013-01",
+    "2013-02",
+    "2013-03",
+    "2013-04",
+    "2013-05",
+    "2013-06",
+    "2013-07",
+    "2013-08",
+    "2013-09",
+    "2013-10",
+    "2013-11",
+    "2013-12"
+  ],
+  "input_sha256": "d79695d157c7166d787ff76f9e127e97c927070d847fcadacd4fc2abc419f84f",
+  "limitations": [
+    "cooling_scheme_semantics_require_review",
+    "recirculating_mixed_or_unknown_cooling_codes",
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "methods": {
+    "Measured at intervals (for example, daily) with a thermometer": 144,
+    "Measured continuously with a thermometer": 24,
+    "Other (provide explanation in Schedule 9)": 24
+  },
+  "missing": {},
+  "missing_internal_months": [],
+  "review_months": {},
+  "split_counts": {
+    "test": 24,
+    "train": 120,
+    "validation": 24
+  },
+  "status": "measurements_only",
+  "validation": "identity, source, units, arithmetic, strict flags, fixed splits; no fitting or imputation"
+}

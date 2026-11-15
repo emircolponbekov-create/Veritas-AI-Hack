@@ -1,0 +1,42 @@
+{
+  "artifact_sha256": {
+    "model_artifacts/audit.json": "5fe59e158b375ad79f10095ebc0d3d9a8b1623b942fa33db17586748ed9aba10",
+    "model_artifacts/evaluation.md": "6717e203ee6c6a457e002138a9657ca29f7d37789844757c1d81f503f0be3438",
+    "model_artifacts/metrics.json": "611c4d06bbc48baa2351d3ebacad6b80469b6903b0da56c94bc1fba6d1748f55",
+    "model_artifacts/parameters.json": "e607ecaabf75034be82280abb20f61ab9a2ff8bcebe90870565de0d1c9b1a611",
+    "model_artifacts/selection.json": "b1ae18ab3c5fe75a0853dcf751dd819a802a03a6451192fd3c76556306496095",
+    "model_artifacts/splits.json": "4b914f7f63454d185e06f506dc4e164d07dcbed731c64cc141273ba0ec6ca838",
+    "model_artifacts/test_errors.csv": "3c89caa16ede4e34f9ca0f4bb33a3952f38e4271a470676bc9df4e9be8b7f6c1",
+    "model_artifacts/test_predictions.png": "b8bc2661173918f458e416f974afd6a5b72a6a40e1a80f747ef53198cc27aabe",
+    "model_artifacts/validation_scores.csv": "d0d3ec470cf9029a863270167c88d75fedc7510ca214d3f5b458a6fc95b6c0e0",
+    "results.csv": "81333cc340b91882b2e5bb9dad82cdcdb1c6a2bb1e3eb7b8ec785afa12a5d46c"
+  },
+  "beats_best_baseline": false,
+  "identity": {
+    "cooling_id_eia": "PLANT",
+    "dataset_id": "eia_6038_504c414e54",
+    "plant_id_eia": 6038
+  },
+  "improvement_vs_best_baseline_c": -0.1167787083333337,
+  "independent_csv_mae_c": {
+    "median_baseline_delta_t_c": 0.925925541666667,
+    "model_delta_t_c": 0.6723340833333337,
+    "seasonal_baseline_delta_t_c": 0.555555375
+  },
+  "split_counts": {
+    "test": 24,
+    "train": 132,
+    "validation": 24
+  },
+  "test_n": 24,
+  "verified": true,
+  "worst_error_from_csv": {
+    "absolute_model_error_c": 1.3966740000000009,
+    "intake_temperature_c": 11.111111,
+    "median_baseline_delta_t_c": 7.777778,
+    "model_delta_t_c": 8.603326,
+    "report_month": "2025-02",
+    "reported_delta_t_c": 10.0,
+    "seasonal_baseline_delta_t_c": 8.888889
+  }
+}

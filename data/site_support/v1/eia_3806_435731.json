@@ -1,0 +1,3733 @@
+{
+  "journey": {
+    "schema_version": 1,
+    "registry_version": "decbc418729de40b6a0563de0673456a1de1147c1eeeec40677dd448d2104896",
+    "dataset_id": "eia_3806_435731",
+    "plant_id_eia": 3806,
+    "plant_name": "Surry",
+    "cooling_id_eia": "CW1",
+    "cooling_family": "once_through",
+    "scheme_mode": "historical_reported_family",
+    "cooling_type_codes": [
+      "O",
+      "ON"
+    ],
+    "period": [
+      "2010-01",
+      "2025-12"
+    ],
+    "steps": [
+      {
+        "id": "intake",
+        "title": "Water intake",
+        "general_explanation": "Water is withdrawn to supply cooling.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "Selected-system registry provenance",
+            "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/nightly/_core_eia923__monthly_cooling_system_information.parquet",
+            "role": "official_statistics",
+            "locator": "eia_3806_435731 / cooling_types",
+            "period": [
+              "2010-01",
+              "2025-12"
+            ]
+          }
+        ],
+        "unknowns": [
+          "Exact intake geometry, flow and organism capture are not provided by monthly temperatures."
+        ],
+        "confirmed_for_system": "Historical registry codes O, ON report this cooling family. This is not a current pipe map.",
+        "site_context": {
+          "text": "The historical operator account describes intake from the James River. This is site context, not an independently traced CW1 pipe map.",
+          "scope": "site",
+          "source": {
+            "title": "Surry historical operator environmental report",
+            "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+            "role": "operator",
+            "locator": "section 3.1.2.1, printed pp.3-2–3-5",
+            "period": "Historical report; exact publication date not established",
+            "reviewed_on": "2026-11-15"
+          },
+          "limitation": "No assignment of a particular physical pipe to the EIA CW1/CW2 ID is established."
+        }
+      },
+      {
+        "id": "heat_transfer",
+        "title": "Heat transfer",
+        "general_explanation": "Cooling water takes up heat while steam is cooled back into liquid water.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "Selected-system registry provenance",
+            "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/nightly/_core_eia923__monthly_cooling_system_information.parquet",
+            "role": "official_statistics",
+            "locator": "eia_3806_435731 / cooling_types",
+            "period": [
+              "2010-01",
+              "2025-12"
+            ]
+          }
+        ],
+        "unknowns": [
+          "Monthly inlet/outlet averages do not show instantaneous heat flow or the path of one droplet."
+        ],
+        "confirmed_for_system": "Historical registry codes O, ON report this cooling family. This is not a current pipe map.",
+        "site_context": {
+          "text": "The historical operator account describes condensers and service-water cooling at Surry. It is not a present-day inspection.",
+          "scope": "site",
+          "source": {
+            "title": "Surry historical operator environmental report",
+            "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+            "role": "operator",
+            "locator": "section 3.1.2.1, printed pp.3-2–3-5",
+            "period": "Historical report; exact publication date not established",
+            "reviewed_on": "2026-11-15"
+          },
+          "limitation": "No assignment of a particular physical pipe to the EIA CW1/CW2 ID is established."
+        }
+      },
+      {
+        "id": "return",
+        "title": "Discharge and mixing",
+        "general_explanation": "Water returns to a receiving water body, where further mixing depends on local conditions.",
+        "sources": [
+          {
+            "title": "PUDL cooling-type code definitions",
+            "url": "https://docs.catalyst.coop/pudl/en/v2026.2.0/data_dictionaries/codes_and_labels.html",
+            "role": "data_dictionary",
+            "locator": "core_eia__codes_cooling_system_types; codes O/ON/OC/OF/OS and R/RC/RF/RI/RN",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "USGS: cooling water use",
+            "url": "https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use",
+            "role": "general_context",
+            "locator": "Cooling – A Primary Use",
+            "reviewed_on": "2026-11-15"
+          },
+          {
+            "title": "Selected-system registry provenance",
+            "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/nightly/_core_eia923__monthly_cooling_system_information.parquet",
+            "role": "official_statistics",
+            "locator": "eia_3806_435731 / cooling_types",
+            "period": [
+              "2010-01",
+              "2025-12"
+            ]
+          }
+        ],
+        "unknowns": [
+          "No downstream temperature map, mixing distance or safety conclusion is available."
+        ],
+        "confirmed_for_system": "Historical registry codes O, ON report this cooling family. This is not a current pipe map.",
+        "site_context": {
+          "text": "The historical operator account describes return via a discharge canal. River-wide mixing is not derived from this description.",
+          "scope": "site",
+          "source": {
+            "title": "Surry historical operator environmental report",
+            "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+            "role": "operator",
+            "locator": "section 3.1.2.1, printed pp.3-2–3-5",
+            "period": "Historical report; exact publication date not established",
+            "reviewed_on": "2026-11-15"
+          },
+          "limitation": "No assignment of a particular physical pipe to the EIA CW1/CW2 ID is established."
+        }
+      }
+    ],
+    "limitations": [
+      "The drawing does not track an actual droplet or depict the real pipe layout.",
+      "No plume shape, travel time, population effect or safety verdict is calculated.",
+      "Historical cooling codes are not a current engineering inspection; mixed/unknown codes remain educational."
+    ],
+    "ai_role": "Ridge estimates the temperature difference across a cooling system for a completed month. Environmental reports use reviewed sources and rules, not a trained environmental-safety model."
+  },
+  "timeline": {
+    "schema_version": 1,
+    "registry_version": "decbc418729de40b6a0563de0673456a1de1147c1eeeec40677dd448d2104896",
+    "dataset_id": "eia_3806_435731",
+    "plant_id_eia": 3806,
+    "plant_name": "Surry",
+    "cooling_id_eia": "CW1",
+    "units": "degC",
+    "source_units": "degF",
+    "kind": "reported_measurement",
+    "data_status": "ready_for_model_check",
+    "limitations": [
+      "reported_measurement_not_independent_sensor_validation",
+      "historical_monthly_retrospective_only_no_ecosystem_inference",
+      "historical_cooling_metadata_incomplete_or_changed"
+    ],
+    "calendar_period": [
+      "2010-01",
+      "2025-12"
+    ],
+    "state": "available",
+    "rows": [
+      {
+        "report_month": "2010-01",
+        "intake_temperature_c": 4.444444,
+        "discharge_temperature_c": 17.222222,
+        "delta_t_c": 12.777778,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-02",
+        "intake_temperature_c": 4.444444,
+        "discharge_temperature_c": 15.555556,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-03",
+        "intake_temperature_c": 11.111111,
+        "discharge_temperature_c": 22.222222,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-04",
+        "intake_temperature_c": 18.333333,
+        "discharge_temperature_c": 28.333333,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-05",
+        "intake_temperature_c": 22.777778,
+        "discharge_temperature_c": 32.777778,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-06",
+        "intake_temperature_c": 22.777778,
+        "discharge_temperature_c": 32.777778,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-07",
+        "intake_temperature_c": 30.0,
+        "discharge_temperature_c": 39.444444,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-08",
+        "intake_temperature_c": 29.444444,
+        "discharge_temperature_c": 38.333333,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-09",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 36.111111,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-10",
+        "intake_temperature_c": 20.0,
+        "discharge_temperature_c": 28.333333,
+        "delta_t_c": 8.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-11",
+        "intake_temperature_c": 15.0,
+        "discharge_temperature_c": 19.444444,
+        "delta_t_c": 4.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2010-12",
+        "intake_temperature_c": 5.0,
+        "discharge_temperature_c": 16.111111,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-01",
+        "intake_temperature_c": 3.333333,
+        "discharge_temperature_c": 14.444444,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-02",
+        "intake_temperature_c": 7.222222,
+        "discharge_temperature_c": 16.666667,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-03",
+        "intake_temperature_c": 12.222222,
+        "discharge_temperature_c": 22.222222,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-04",
+        "intake_temperature_c": 17.222222,
+        "discharge_temperature_c": 24.444444,
+        "delta_t_c": 7.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-05",
+        "intake_temperature_c": 22.777778,
+        "discharge_temperature_c": 31.666667,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-06",
+        "intake_temperature_c": 27.777778,
+        "discharge_temperature_c": 36.111111,
+        "delta_t_c": 8.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-07",
+        "intake_temperature_c": 30.555556,
+        "discharge_temperature_c": 39.444444,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-08",
+        "intake_temperature_c": 28.888889,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-09",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 35.0,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-10",
+        "intake_temperature_c": 19.444444,
+        "discharge_temperature_c": 28.888889,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-11",
+        "intake_temperature_c": 13.888889,
+        "discharge_temperature_c": 23.888889,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2011-12",
+        "intake_temperature_c": 11.111111,
+        "discharge_temperature_c": 21.666667,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-01",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 18.888889,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-02",
+        "intake_temperature_c": 8.888889,
+        "discharge_temperature_c": 20.0,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-03",
+        "intake_temperature_c": 15.0,
+        "discharge_temperature_c": 25.0,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-04",
+        "intake_temperature_c": 17.777778,
+        "discharge_temperature_c": 26.666667,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-05",
+        "intake_temperature_c": 22.777778,
+        "discharge_temperature_c": 25.0,
+        "delta_t_c": 2.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-06",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 33.333333,
+        "delta_t_c": 7.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-07",
+        "intake_temperature_c": 30.555556,
+        "discharge_temperature_c": 38.888889,
+        "delta_t_c": 8.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-08",
+        "intake_temperature_c": 28.888889,
+        "discharge_temperature_c": 36.666667,
+        "delta_t_c": 7.777778,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-09",
+        "intake_temperature_c": 25.555556,
+        "discharge_temperature_c": 34.444444,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-10",
+        "intake_temperature_c": 20.0,
+        "discharge_temperature_c": 29.444444,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-11",
+        "intake_temperature_c": 11.666667,
+        "discharge_temperature_c": 22.777778,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2012-12",
+        "intake_temperature_c": 10.0,
+        "discharge_temperature_c": 20.0,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-01",
+        "intake_temperature_c": 7.222222,
+        "discharge_temperature_c": 26.666667,
+        "delta_t_c": 19.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-02",
+        "intake_temperature_c": 7.222222,
+        "discharge_temperature_c": 20.0,
+        "delta_t_c": 12.777778,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-03",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 24.444444,
+        "delta_t_c": 16.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-04",
+        "intake_temperature_c": 16.666667,
+        "discharge_temperature_c": 32.222222,
+        "delta_t_c": 15.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-05",
+        "intake_temperature_c": 21.111111,
+        "discharge_temperature_c": 37.222222,
+        "delta_t_c": 16.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-06",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-07",
+        "intake_temperature_c": 29.444444,
+        "discharge_temperature_c": 40.555556,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-08",
+        "intake_temperature_c": 27.222222,
+        "discharge_temperature_c": 38.888889,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-09",
+        "intake_temperature_c": 25.0,
+        "discharge_temperature_c": 38.333333,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-10",
+        "intake_temperature_c": 20.0,
+        "discharge_temperature_c": 36.666667,
+        "delta_t_c": 16.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-11",
+        "intake_temperature_c": 12.222222,
+        "discharge_temperature_c": 23.333333,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2013-12",
+        "intake_temperature_c": 8.888889,
+        "discharge_temperature_c": 23.888889,
+        "delta_t_c": 15.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-01",
+        "intake_temperature_c": 5.555556,
+        "discharge_temperature_c": 17.777778,
+        "delta_t_c": 12.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-02",
+        "intake_temperature_c": 5.555556,
+        "discharge_temperature_c": 17.777778,
+        "delta_t_c": 12.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-03",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 18.888889,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-04",
+        "intake_temperature_c": 16.111111,
+        "discharge_temperature_c": 25.555556,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-05",
+        "intake_temperature_c": 23.888889,
+        "discharge_temperature_c": 31.666667,
+        "delta_t_c": 7.777778,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-06",
+        "intake_temperature_c": 27.222222,
+        "discharge_temperature_c": 37.222222,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-07",
+        "intake_temperature_c": 28.333333,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-08",
+        "intake_temperature_c": 27.777778,
+        "discharge_temperature_c": 36.666667,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-09",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 35.0,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-10",
+        "intake_temperature_c": 20.555556,
+        "discharge_temperature_c": 31.111111,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-11",
+        "intake_temperature_c": 12.222222,
+        "discharge_temperature_c": 22.777778,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2014-12",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 18.888889,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-01",
+        "intake_temperature_c": 6.111111,
+        "discharge_temperature_c": 16.111111,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-02",
+        "intake_temperature_c": 2.777778,
+        "discharge_temperature_c": 14.444444,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-03",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 18.333333,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-04",
+        "intake_temperature_c": 15.555556,
+        "discharge_temperature_c": 25.555556,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-05",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 35.0,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-06",
+        "intake_temperature_c": 28.333333,
+        "discharge_temperature_c": 38.333333,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-07",
+        "intake_temperature_c": 29.444444,
+        "discharge_temperature_c": 38.333333,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-08",
+        "intake_temperature_c": 28.888889,
+        "discharge_temperature_c": 38.333333,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-09",
+        "intake_temperature_c": 26.666667,
+        "discharge_temperature_c": 30.555556,
+        "delta_t_c": 3.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-10",
+        "intake_temperature_c": 21.666667,
+        "discharge_temperature_c": 27.777778,
+        "delta_t_c": 6.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-11",
+        "intake_temperature_c": 13.333333,
+        "discharge_temperature_c": 22.222222,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2015-12",
+        "intake_temperature_c": 13.333333,
+        "discharge_temperature_c": 22.777778,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-01",
+        "intake_temperature_c": 7.777778,
+        "discharge_temperature_c": 18.333333,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-02",
+        "intake_temperature_c": 7.222222,
+        "discharge_temperature_c": 18.888889,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-03",
+        "intake_temperature_c": 13.333333,
+        "discharge_temperature_c": 23.888889,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-04",
+        "intake_temperature_c": 16.666667,
+        "discharge_temperature_c": 27.222222,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-05",
+        "intake_temperature_c": 21.111111,
+        "discharge_temperature_c": 31.666667,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-06",
+        "intake_temperature_c": 26.666667,
+        "discharge_temperature_c": 36.111111,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-07",
+        "intake_temperature_c": 30.0,
+        "discharge_temperature_c": 39.444444,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-08",
+        "intake_temperature_c": 30.0,
+        "discharge_temperature_c": 39.444444,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-09",
+        "intake_temperature_c": 26.666667,
+        "discharge_temperature_c": 35.555556,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-10",
+        "intake_temperature_c": 26.666667,
+        "discharge_temperature_c": 35.555556,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-11",
+        "intake_temperature_c": 22.777778,
+        "discharge_temperature_c": 31.666667,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2016-12",
+        "intake_temperature_c": 8.888889,
+        "discharge_temperature_c": 18.333333,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-01",
+        "intake_temperature_c": 6.666667,
+        "discharge_temperature_c": 18.333333,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-02",
+        "intake_temperature_c": 8.888889,
+        "discharge_temperature_c": 20.555556,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-03",
+        "intake_temperature_c": 11.111111,
+        "discharge_temperature_c": 21.666667,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-04",
+        "intake_temperature_c": 18.333333,
+        "discharge_temperature_c": 28.333333,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-05",
+        "intake_temperature_c": 20.555556,
+        "discharge_temperature_c": 31.111111,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-06",
+        "intake_temperature_c": 26.666667,
+        "discharge_temperature_c": 36.111111,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-07",
+        "intake_temperature_c": 30.0,
+        "discharge_temperature_c": 38.888889,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-08",
+        "intake_temperature_c": 27.777778,
+        "discharge_temperature_c": 36.666667,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-09",
+        "intake_temperature_c": 25.0,
+        "discharge_temperature_c": 34.444444,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-10",
+        "intake_temperature_c": 21.666667,
+        "discharge_temperature_c": 31.111111,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-11",
+        "intake_temperature_c": 13.888889,
+        "discharge_temperature_c": 23.333333,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2017-12",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 18.888889,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-01",
+        "intake_temperature_c": 2.777778,
+        "discharge_temperature_c": 16.111111,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-02",
+        "intake_temperature_c": 8.888889,
+        "discharge_temperature_c": 20.555556,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-03",
+        "intake_temperature_c": 9.444444,
+        "discharge_temperature_c": 20.555556,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-04",
+        "intake_temperature_c": 15.555556,
+        "discharge_temperature_c": 26.111111,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-05",
+        "intake_temperature_c": 23.888889,
+        "discharge_temperature_c": 31.111111,
+        "delta_t_c": 7.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-06",
+        "intake_temperature_c": 28.333333,
+        "discharge_temperature_c": 37.222222,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-07",
+        "intake_temperature_c": 28.888889,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-08",
+        "intake_temperature_c": 29.444444,
+        "discharge_temperature_c": 38.888889,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-09",
+        "intake_temperature_c": 28.888889,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-10",
+        "intake_temperature_c": 21.666667,
+        "discharge_temperature_c": 30.555556,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-11",
+        "intake_temperature_c": 12.777778,
+        "discharge_temperature_c": 21.111111,
+        "delta_t_c": 8.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2018-12",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 18.333333,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-01",
+        "intake_temperature_c": 7.777778,
+        "discharge_temperature_c": 19.444444,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-02",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 19.444444,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-03",
+        "intake_temperature_c": 11.111111,
+        "discharge_temperature_c": 21.111111,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-04",
+        "intake_temperature_c": 18.333333,
+        "discharge_temperature_c": 28.888889,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-05",
+        "intake_temperature_c": 25.0,
+        "discharge_temperature_c": 35.555556,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-06",
+        "intake_temperature_c": 27.222222,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-07",
+        "intake_temperature_c": 30.555556,
+        "discharge_temperature_c": 39.444444,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-08",
+        "intake_temperature_c": 28.888889,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-09",
+        "intake_temperature_c": 26.666667,
+        "discharge_temperature_c": 36.111111,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-10",
+        "intake_temperature_c": 21.666667,
+        "discharge_temperature_c": 30.555556,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-11",
+        "intake_temperature_c": 12.777778,
+        "discharge_temperature_c": 19.444444,
+        "delta_t_c": 6.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2019-12",
+        "intake_temperature_c": 8.888889,
+        "discharge_temperature_c": 19.444444,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-01",
+        "intake_temperature_c": 9.444444,
+        "discharge_temperature_c": 20.555556,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-02",
+        "intake_temperature_c": 10.0,
+        "discharge_temperature_c": 21.666667,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-03",
+        "intake_temperature_c": 12.777778,
+        "discharge_temperature_c": 22.777778,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-04",
+        "intake_temperature_c": 16.666667,
+        "discharge_temperature_c": 26.111111,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-05",
+        "intake_temperature_c": 20.0,
+        "discharge_temperature_c": 25.0,
+        "delta_t_c": 5.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-06",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 36.111111,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-07",
+        "intake_temperature_c": 30.555556,
+        "discharge_temperature_c": 40.555556,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-08",
+        "intake_temperature_c": 29.444444,
+        "discharge_temperature_c": 39.444444,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-09",
+        "intake_temperature_c": 25.0,
+        "discharge_temperature_c": 35.0,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-10",
+        "intake_temperature_c": 21.111111,
+        "discharge_temperature_c": 30.555556,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-11",
+        "intake_temperature_c": 15.555556,
+        "discharge_temperature_c": 27.222222,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2020-12",
+        "intake_temperature_c": 9.444444,
+        "discharge_temperature_c": 20.555556,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-01",
+        "intake_temperature_c": 7.777778,
+        "discharge_temperature_c": 18.333333,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-02",
+        "intake_temperature_c": 6.111111,
+        "discharge_temperature_c": 17.222222,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-03",
+        "intake_temperature_c": 12.222222,
+        "discharge_temperature_c": 22.777778,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-04",
+        "intake_temperature_c": 18.333333,
+        "discharge_temperature_c": 27.777778,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-05",
+        "intake_temperature_c": 20.0,
+        "discharge_temperature_c": 25.0,
+        "delta_t_c": 5.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-06",
+        "intake_temperature_c": 22.222222,
+        "discharge_temperature_c": 23.888889,
+        "delta_t_c": 1.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-07",
+        "intake_temperature_c": 30.0,
+        "discharge_temperature_c": 38.888889,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-08",
+        "intake_temperature_c": 29.444444,
+        "discharge_temperature_c": 40.0,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-09",
+        "intake_temperature_c": null,
+        "discharge_temperature_c": null,
+        "delta_t_c": null,
+        "record_present": true,
+        "eligible_measured": false,
+        "pair_available": true,
+        "source_method": "nan",
+        "status": "excluded_method",
+        "reasons": [
+          "Source method is not an explicitly measured thermometer method"
+        ],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-10",
+        "intake_temperature_c": 22.222222,
+        "discharge_temperature_c": 41.111111,
+        "delta_t_c": 18.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-11",
+        "intake_temperature_c": 16.111111,
+        "discharge_temperature_c": 35.555556,
+        "delta_t_c": 19.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2021-12",
+        "intake_temperature_c": null,
+        "discharge_temperature_c": null,
+        "delta_t_c": null,
+        "record_present": true,
+        "eligible_measured": false,
+        "pair_available": true,
+        "source_method": "nan",
+        "status": "excluded_method",
+        "reasons": [
+          "Source method is not an explicitly measured thermometer method"
+        ],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-01",
+        "intake_temperature_c": 6.666667,
+        "discharge_temperature_c": 20.0,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-02",
+        "intake_temperature_c": 8.888889,
+        "discharge_temperature_c": 22.222222,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-03",
+        "intake_temperature_c": 12.777778,
+        "discharge_temperature_c": 26.666667,
+        "delta_t_c": 13.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-04",
+        "intake_temperature_c": 16.666667,
+        "discharge_temperature_c": 30.555556,
+        "delta_t_c": 13.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-05",
+        "intake_temperature_c": 22.222222,
+        "discharge_temperature_c": 35.555556,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-06",
+        "intake_temperature_c": 27.222222,
+        "discharge_temperature_c": 40.555556,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-07",
+        "intake_temperature_c": 29.444444,
+        "discharge_temperature_c": 38.888889,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-08",
+        "intake_temperature_c": 28.888889,
+        "discharge_temperature_c": 40.0,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-09",
+        "intake_temperature_c": 26.666667,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-10",
+        "intake_temperature_c": 18.333333,
+        "discharge_temperature_c": 28.888889,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-11",
+        "intake_temperature_c": 17.222222,
+        "discharge_temperature_c": 22.777778,
+        "delta_t_c": 5.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2022-12",
+        "intake_temperature_c": 8.888889,
+        "discharge_temperature_c": 17.777778,
+        "delta_t_c": 8.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-01",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 20.555556,
+        "delta_t_c": 12.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-02",
+        "intake_temperature_c": 10.0,
+        "discharge_temperature_c": 21.111111,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-03",
+        "intake_temperature_c": 12.777778,
+        "discharge_temperature_c": 24.444444,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-04",
+        "intake_temperature_c": 17.777778,
+        "discharge_temperature_c": 29.444444,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-05",
+        "intake_temperature_c": 21.111111,
+        "discharge_temperature_c": 30.555556,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-06",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 37.222222,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-07",
+        "intake_temperature_c": 30.555556,
+        "discharge_temperature_c": 41.111111,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-08",
+        "intake_temperature_c": 20.555556,
+        "discharge_temperature_c": 31.111111,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-09",
+        "intake_temperature_c": 26.111111,
+        "discharge_temperature_c": 36.111111,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-10",
+        "intake_temperature_c": 20.555556,
+        "discharge_temperature_c": 30.555556,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-11",
+        "intake_temperature_c": 15.0,
+        "discharge_temperature_c": 26.666667,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2023-12",
+        "intake_temperature_c": 10.0,
+        "discharge_temperature_c": 21.111111,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-01",
+        "intake_temperature_c": 8.333333,
+        "discharge_temperature_c": 20.0,
+        "delta_t_c": 11.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-02",
+        "intake_temperature_c": 15.555556,
+        "discharge_temperature_c": 25.555556,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-03",
+        "intake_temperature_c": 20.555556,
+        "discharge_temperature_c": 31.666667,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-04",
+        "intake_temperature_c": 25.555556,
+        "discharge_temperature_c": 35.555556,
+        "delta_t_c": 10.0,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-05",
+        "intake_temperature_c": 28.333333,
+        "discharge_temperature_c": 37.777778,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-06",
+        "intake_temperature_c": 29.444444,
+        "discharge_temperature_c": 38.888889,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-07",
+        "intake_temperature_c": 28.333333,
+        "discharge_temperature_c": 40.555556,
+        "delta_t_c": 12.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-08",
+        "intake_temperature_c": null,
+        "discharge_temperature_c": null,
+        "delta_t_c": null,
+        "record_present": true,
+        "eligible_measured": false,
+        "pair_available": true,
+        "source_method": "Other (provide explanation in Schedule 9)",
+        "status": "excluded_method",
+        "reasons": [
+          "Source method is not an explicitly measured thermometer method"
+        ],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-09",
+        "intake_temperature_c": 17.222222,
+        "discharge_temperature_c": 30.555556,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-10",
+        "intake_temperature_c": 13.333333,
+        "discharge_temperature_c": 24.444444,
+        "delta_t_c": 11.111111,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-11",
+        "intake_temperature_c": 9.444444,
+        "discharge_temperature_c": 21.666667,
+        "delta_t_c": 12.222222,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2024-12",
+        "intake_temperature_c": 7.777778,
+        "discharge_temperature_c": 21.666667,
+        "delta_t_c": 13.888889,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-01",
+        "intake_temperature_c": 4.444444,
+        "discharge_temperature_c": 17.777778,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-02",
+        "intake_temperature_c": 7.777778,
+        "discharge_temperature_c": 21.111111,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-03",
+        "intake_temperature_c": 12.222222,
+        "discharge_temperature_c": 25.0,
+        "delta_t_c": 12.777778,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-04",
+        "intake_temperature_c": 20.0,
+        "discharge_temperature_c": 33.333333,
+        "delta_t_c": 13.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-05",
+        "intake_temperature_c": 23.888889,
+        "discharge_temperature_c": 36.666667,
+        "delta_t_c": 12.777778,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-06",
+        "intake_temperature_c": 28.333333,
+        "discharge_temperature_c": 41.111111,
+        "delta_t_c": 12.777778,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-07",
+        "intake_temperature_c": 31.111111,
+        "discharge_temperature_c": 40.555556,
+        "delta_t_c": 9.444444,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-08",
+        "intake_temperature_c": 27.777778,
+        "discharge_temperature_c": 36.111111,
+        "delta_t_c": 8.333333,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-09",
+        "intake_temperature_c": 23.888889,
+        "discharge_temperature_c": 34.444444,
+        "delta_t_c": 10.555556,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-10",
+        "intake_temperature_c": 23.888889,
+        "discharge_temperature_c": 36.666667,
+        "delta_t_c": 12.777778,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-11",
+        "intake_temperature_c": null,
+        "discharge_temperature_c": null,
+        "delta_t_c": null,
+        "record_present": true,
+        "eligible_measured": false,
+        "pair_available": true,
+        "source_method": "Other (provide explanation in Schedule 9)",
+        "status": "excluded_method",
+        "reasons": [
+          "Source method is not an explicitly measured thermometer method"
+        ],
+        "kind": "reported_measurement"
+      },
+      {
+        "report_month": "2025-12",
+        "intake_temperature_c": 6.111111,
+        "discharge_temperature_c": 12.777778,
+        "delta_t_c": 6.666667,
+        "record_present": true,
+        "eligible_measured": true,
+        "pair_available": true,
+        "source_method": "Measured continuously with a thermometer",
+        "status": "verified_measurement",
+        "reasons": [],
+        "kind": "reported_measurement"
+      }
+    ]
+  },
+  "predictions": {
+    "schema_version": 1,
+    "registry_version": "decbc418729de40b6a0563de0673456a1de1147c1eeeec40677dd448d2104896",
+    "dataset_id": "eia_3806_435731",
+    "plant_id_eia": 3806,
+    "plant_name": "Surry",
+    "cooling_id_eia": "CW1",
+    "kind": "model_estimate",
+    "units": "degC",
+    "rows": [
+      {
+        "report_month": "2024-01",
+        "kind": "model_estimate",
+        "model_delta_t_c": 10.984895,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 11.388889
+      },
+      {
+        "report_month": "2024-02",
+        "kind": "model_estimate",
+        "model_delta_t_c": 10.610859,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 11.666667
+      },
+      {
+        "report_month": "2024-03",
+        "kind": "model_estimate",
+        "model_delta_t_c": 10.214671,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 10.555556
+      },
+      {
+        "report_month": "2024-04",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.762559,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 10.0
+      },
+      {
+        "report_month": "2024-05",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.410334,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 8.888889
+      },
+      {
+        "report_month": "2024-06",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.20131,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 9.722222
+      },
+      {
+        "report_month": "2024-07",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.201623,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 8.888889
+      },
+      {
+        "report_month": "2024-09",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.928197,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 8.888889
+      },
+      {
+        "report_month": "2024-10",
+        "kind": "model_estimate",
+        "model_delta_t_c": 10.336659,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 9.444444
+      },
+      {
+        "report_month": "2024-11",
+        "kind": "model_estimate",
+        "model_delta_t_c": 10.732534,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 9.722222
+      },
+      {
+        "report_month": "2024-12",
+        "kind": "model_estimate",
+        "model_delta_t_c": 10.963383,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 10.555556
+      },
+      {
+        "report_month": "2025-01",
+        "kind": "model_estimate",
+        "model_delta_t_c": 11.137669,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 11.388889
+      },
+      {
+        "report_month": "2025-02",
+        "kind": "model_estimate",
+        "model_delta_t_c": 10.916407,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 11.666667
+      },
+      {
+        "report_month": "2025-03",
+        "kind": "model_estimate",
+        "model_delta_t_c": 10.542044,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 10.555556
+      },
+      {
+        "report_month": "2025-04",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.980808,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 10.0
+      },
+      {
+        "report_month": "2025-05",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.584933,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 8.888889
+      },
+      {
+        "report_month": "2025-06",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.244959,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 9.722222
+      },
+      {
+        "report_month": "2025-07",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.092498,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 8.888889
+      },
+      {
+        "report_month": "2025-08",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.313761,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 9.166667
+      },
+      {
+        "report_month": "2025-09",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.666299,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 8.888889
+      },
+      {
+        "report_month": "2025-10",
+        "kind": "model_estimate",
+        "model_delta_t_c": 9.921988,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 9.444444
+      },
+      {
+        "report_month": "2025-12",
+        "kind": "model_estimate",
+        "model_delta_t_c": 11.028858,
+        "median_baseline_delta_t_c": 10.0,
+        "seasonal_baseline_delta_t_c": 10.555556
+      }
+    ],
+    "label": "Saved retrospective estimates, not measured temperatures",
+    "mae_c": {
+      "median_baseline_delta_t_c": 1.994949545454545,
+      "seasonal_baseline_delta_t_c": 2.0454544999999995,
+      "model_delta_t_c": 1.8493300909090906
+    },
+    "test_n": 22,
+    "state": "verified"
+  },
+  "claim_details": {
+    "schema_version": 1,
+    "registry_version": "decbc418729de40b6a0563de0673456a1de1147c1eeeec40677dd448d2104896",
+    "plant_id_eia": 3806,
+    "cooling_id_eia": "CW1",
+    "report_state": "ready",
+    "statements": [
+      {
+        "statement_id": "eia_3806.summary.water",
+        "statement": "Historical records document warmer cooling-water discharge from CW1.",
+        "target": "summary",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          59
+        ],
+        "display_span": "Historical records document warmer cooling-water discharge ",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "cw1_warmer"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "eia_surry_cw1",
+            "locator": "Local CSV: plant_id_eia=3806, cooling_id_eia=CW1; eligible_measured rows; intake/discharge monthly means",
+            "support_note": "Existing adapter verifies original Fahrenheit fields, conversions, source identity and positive reported differences on all 188 eligible months",
+            "public_locator": "Surry CW1 measured monthly reports, 2010–2025",
+            "title": "EIA/PUDL Surry CW1 monthly records, 2010–2025",
+            "url": "https://data.catalyst.coop/preview/pudl/_core_eia923__monthly_cooling_system_information",
+            "role": "government_reports_via_pudl"
+          }
+        ],
+        "period": {
+          "label": "Eligible reporting months 2010–2025",
+          "start": "2010-01-01",
+          "end": "2025-12-31"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "system",
+          "plant_id_eia": 3806,
+          "cooling_id_eia": "CW1"
+        },
+        "limitation": "Source-reported means, not independently remeasured sensors; four ineligible months retained No synchronized flow, river plume geometry, temperature peaks or exposure",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.summary.fish",
+        "statement": "Historical records document fish caught by the water intake.",
+        "target": "summary",
+        "paragraph_index": 0,
+        "span": [
+          59,
+          95
+        ],
+        "display_span": "and fish caught by the water intake.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "epa_intakes_2001",
+            "locator": "Chapter 5 pp. 5-4–5-5; Appendix A p. A-6, Surry paragraph",
+            "support_note": "Surry-specific impingement-survival statement and modified screen/fish return description; study-level result, not present-day population assessment",
+            "public_locator": "Surry fish studies, pages 5-4–5-5 and A-6",
+            "title": "US EPA cooling-water intake study (2001), pp. 5-4–5-5 and A-6",
+            "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20002QWR.TXT",
+            "role": "regulator_synthesis"
+          }
+        ],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.summary.boundary",
+        "statement": "They do not establish an overall environmental benefit, harm or safety verdict, or describe today’s conditions.",
+        "target": "summary",
+        "paragraph_index": 0,
+        "span": [
+          96,
+          207
+        ],
+        "display_span": "They do not establish an overall environmental benefit, harm or safety verdict, or describe today’s conditions.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.cw1_warmer",
+        "statement": "In the reviewed 2010–2025 monthly record, water leaving cooling system CW1 was warmer than water entering it.",
+        "target": "water",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          109
+        ],
+        "display_span": "In the reviewed 2010–2025 monthly record, water leaving cooling system CW1 was warmer than water entering it.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "cw1_warmer"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "eia_surry_cw1",
+            "locator": "Local CSV: plant_id_eia=3806, cooling_id_eia=CW1; eligible_measured rows; intake/discharge monthly means",
+            "support_note": "Existing adapter verifies original Fahrenheit fields, conversions, source identity and positive reported differences on all 188 eligible months",
+            "public_locator": "Surry CW1 measured monthly reports, 2010–2025",
+            "title": "EIA/PUDL Surry CW1 monthly records, 2010–2025",
+            "url": "https://data.catalyst.coop/preview/pudl/_core_eia923__monthly_cooling_system_information",
+            "role": "government_reports_via_pudl"
+          }
+        ],
+        "period": {
+          "label": "Eligible reporting months 2010–2025",
+          "start": "2010-01-01",
+          "end": "2025-12-31"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "system",
+          "plant_id_eia": 3806,
+          "cooling_id_eia": "CW1"
+        },
+        "limitation": "Source-reported means, not independently remeasured sensors; four ineligible months retained No synchronized flow, river plume geometry, temperature peaks or exposure",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.cw1_scope",
+        "statement": "This confirms heating across that system, not the temperature change of the whole James River.",
+        "target": "water",
+        "paragraph_index": 0,
+        "span": [
+          110,
+          204
+        ],
+        "display_span": "This confirms heating across that system, not the temperature change of the whole James River.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "cw1_warmer"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "eia_surry_cw1",
+            "locator": "Local CSV: plant_id_eia=3806, cooling_id_eia=CW1; eligible_measured rows; intake/discharge monthly means",
+            "support_note": "Existing adapter verifies original Fahrenheit fields, conversions, source identity and positive reported differences on all 188 eligible months",
+            "public_locator": "Surry CW1 measured monthly reports, 2010–2025",
+            "title": "EIA/PUDL Surry CW1 monthly records, 2010–2025",
+            "url": "https://data.catalyst.coop/preview/pudl/_core_eia923__monthly_cooling_system_information",
+            "role": "government_reports_via_pudl"
+          }
+        ],
+        "period": {
+          "label": "Eligible reporting months 2010–2025",
+          "start": "2010-01-01",
+          "end": "2025-12-31"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "system",
+          "plant_id_eia": 3806,
+          "cooling_id_eia": "CW1"
+        },
+        "limitation": "Source-reported means, not independently remeasured sensors; four ineligible months retained No synchronized flow, river plume geometry, temperature peaks or exposure",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.tritium_detected",
+        "statement": "State monitoring in 2024 also recorded tritium, a radioactive form of hydrogen, in a discharge-canal water sample.",
+        "target": "water",
+        "paragraph_index": 1,
+        "span": [
+          0,
+          114
+        ],
+        "display_span": "State monitoring in 2024 also recorded tritium, a radioactive form of hydrogen, in a discharge-canal water sample.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "vdh_h3"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "vdh_2024",
+            "locator": "p. 3 location SPS-W-1; p. 24 Week 13 Water table, H3 column and footnote",
+            "support_note": "SPS-W-1 is discharge canal, not drinking water; table reports detected H3; footnote cites a tank release confirmed by station personnel",
+            "public_locator": "Discharge-canal sample, page 24; location key, page 3; laboratory explanation, page 10",
+            "title": "Virginia Department of Health environmental monitoring, 2024",
+            "url": "https://www.vdh.virginia.gov/content/uploads/sites/7/2025/05/2024-Final-Report.pdf",
+            "role": "state_monitoring"
+          }
+        ],
+        "period": {
+          "label": "VDH Week 13, 25 March–1 April 2024",
+          "start": "2024-03-25",
+          "end": "2024-04-01"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "One sampled location/period; no drinking-water exposure assumption No dose reconstruction, toxicity outcome or compliance conclusion State measurement independent of operator; release explanation originates with operator",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.tritium_no_harm_inference",
+        "statement": "This is a separate finding from temperature; it is not by itself evidence of illness or ecological harm.",
+        "target": "water",
+        "paragraph_index": 1,
+        "span": [
+          115,
+          219
+        ],
+        "display_span": "This is a separate finding from temperature; it is not by itself evidence of illness or ecological harm.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "vdh_h3"
+        ],
+        "evidence_kind": "observation",
+        "sources": [],
+        "period": {
+          "label": "VDH Week 13, 25 March–1 April 2024",
+          "start": "2024-03-25",
+          "end": "2024-04-01"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "One sampled location/period; no drinking-water exposure assumption No dose reconstruction, toxicity outcome or compliance conclusion State measurement independent of operator; release explanation originates with operator",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.river_chemistry_gap",
+        "statement": "The reviewed collection does not establish current river-wide heating or chemical damage.",
+        "target": "water",
+        "paragraph_index": 2,
+        "span": [
+          0,
+          89
+        ],
+        "display_span": "The reviewed collection does not establish current river-wide heating or chemical damage.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.water.nondetection_boundary",
+        "statement": "A laboratory nondetection would not mean that a substance is entirely absent.",
+        "target": "water",
+        "paragraph_index": 2,
+        "span": [
+          90,
+          167
+        ],
+        "display_span": "A laboratory nondetection would not mean that a substance is entirely absent.",
+        "text_role": "method_explanation",
+        "parent_claim_ids": [
+          "vdh_h3"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "vdh_2024",
+            "locator": "p. 10, No Detectable Results explanation",
+            "support_note": "Detection is conditional on analytical identification criteria; not an assurance of literal zero",
+            "public_locator": "Discharge-canal sample, page 24; location key, page 3; laboratory explanation, page 10",
+            "title": "Virginia Department of Health environmental monitoring, 2024",
+            "url": "https://www.vdh.virginia.gov/content/uploads/sites/7/2025/05/2024-Final-Report.pdf",
+            "role": "state_monitoring"
+          }
+        ],
+        "period": {
+          "label": "VDH Week 13, 25 March–1 April 2024",
+          "start": "2024-03-25",
+          "end": "2024-04-01"
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "One sampled location/period; no drinking-water exposure assumption No dose reconstruction, toxicity outcome or compliance conclusion State measurement independent of operator; release explanation originates with operator",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.intake.historical_capture_survival",
+        "statement": "EPA summarized 1970s Surry studies in which fish were caught against intake screens and most survived.",
+        "target": "animals_plants",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          102
+        ],
+        "display_span": "EPA summarized 1970s Surry studies in which fish were caught against intake screens and most survived.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "epa_intakes_2001",
+            "locator": "Chapter 5 pp. 5-4–5-5; Appendix A p. A-6, Surry paragraph",
+            "support_note": "Surry-specific impingement-survival statement and modified screen/fish return description; study-level result, not present-day population assessment",
+            "public_locator": "Surry fish studies, pages 5-4–5-5 and A-6",
+            "title": "US EPA cooling-water intake study (2001), pp. 5-4–5-5 and A-6",
+            "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20002QWR.TXT",
+            "role": "regulator_synthesis"
+          }
+        ],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.intake.no_harmlessness_inference",
+        "statement": "That documents a physical pressure and historical fish-return performance, not proof that the intake was harmless.",
+        "target": "animals_plants",
+        "paragraph_index": 0,
+        "span": [
+          103,
+          217
+        ],
+        "display_span": "That documents a physical pressure and historical fish-return performance, not proof that the intake was harmless.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.land.evidence_gap",
+        "statement": "For land animals, plants and habitats, this reviewed collection lacks enough field evidence to establish a positive or negative effect of the station.",
+        "target": "animals_plants",
+        "paragraph_index": 1,
+        "span": [
+          0,
+          150
+        ],
+        "display_span": "For land animals, plants and habitats, this reviewed collection lacks enough field evidence to establish a positive or negative effect of the station.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.intake.no_current_counts",
+        "statement": "Historical fish findings must not be presented as current counts.",
+        "target": "animals_plants",
+        "paragraph_index": 1,
+        "span": [
+          151,
+          216
+        ],
+        "display_span": "Historical fish findings must not be presented as current counts.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.intake.operator_population_statement",
+        "statement": "The operator also reported no detectable local fish-population impact in older studies.",
+        "target": "animals_plants",
+        "paragraph_index": 2,
+        "span": [
+          0,
+          87
+        ],
+        "display_span": "The operator also reported no detectable local fish-population impact in older studies.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; study reference p. 6-11",
+            "support_note": "Operator reports both organism capture and no detected population effect; these endpoints are not interchangeable",
+            "public_locator": "Historical operator account, pages 6-3 and 6-11",
+            "title": "Surry historical applicant environmental report, section 6.3",
+            "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+            "role": "operator"
+          }
+        ],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.intake.endpoint_boundary",
+        "statement": "That addresses a different outcome: it does not mean that no individual organisms were caught or lost.",
+        "target": "animals_plants",
+        "paragraph_index": 2,
+        "span": [
+          88,
+          190
+        ],
+        "display_span": "That addresses a different outcome: it does not mean that no individual organisms were caught or lost.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "epa_fish"
+        ],
+        "evidence_kind": "observation",
+        "sources": [],
+        "period": {
+          "label": "1970s studies, summarized by EPA in 2001",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Underlying historical industry studies; EPA synthesis is not a new independent field measurement Survival of captured fish does not quantify all larvae, delayed mortality or population changes No causal improvement versus a matched unmodified intake is established here",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": [
+          {
+            "source_id": "operator_legacy",
+            "locator": "section 6.3 p. 6-3; reference 6.3-1 p. 6-11",
+            "relationship": "different_endpoint_not_direct_contradiction"
+          }
+        ]
+      },
+      {
+        "statement_id": "eia_3806.people.health_living_gap",
+        "statement": "Insufficient evidence for this station to draw a conclusion about effects on health or living conditions.",
+        "target": "people",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          105
+        ],
+        "display_span": "Insufficient evidence for this station to draw a conclusion about effects on health or living conditions.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.people.missing_assessments",
+        "statement": "No suitable exposure history, health-outcome study or independently checked local-benefit assessment has been reviewed here.",
+        "target": "people",
+        "paragraph_index": 0,
+        "span": [
+          106,
+          230
+        ],
+        "display_span": "No suitable exposure history, health-outcome study or independently checked local-benefit assessment has been reviewed here.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.people.sampling_not_health",
+        "statement": "Environmental sampling alone cannot answer those questions.",
+        "target": "people",
+        "paragraph_index": 0,
+        "span": [
+          231,
+          290
+        ],
+        "display_span": "Environmental sampling alone cannot answer those questions.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.climate.general_lifecycle_context",
+        "statement": "General context only: a 2014 IPCC review reports lower greenhouse-gas emissions over the full nuclear electricity supply chain than for coal or gas.",
+        "target": "climate",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          148
+        ],
+        "display_span": "General context only: a 2014 IPCC review reports lower greenhouse-gas emissions over the full nuclear electricity supply chain than for coal or gas.",
+        "text_role": "source_fact",
+        "parent_claim_ids": [
+          "ipcc_context"
+        ],
+        "evidence_kind": "general_context",
+        "sources": [
+          {
+            "source_id": "ipcc_ar5",
+            "locator": "Annex III p. 1335, Table A.III.2; lifecycle columns, Nuclear / Coal-PC / Gas-Combined-Cycle rows",
+            "support_note": "Technology literature comparison only; not an operating-station inventory or a displacement counterfactual",
+            "public_locator": "Electricity supply-chain comparison, table on page 1335",
+            "title": "IPCC 2014 electricity life-cycle review, Table A.III.2",
+            "url": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf",
+            "role": "scientific_assessment"
+          }
+        ],
+        "period": {
+          "label": "IPCC 2014 literature assessment; not a Surry observation period",
+          "start": null,
+          "end": null
+        },
+        "geography": "Global technology literature; not measurements from Surry or its water body",
+        "scope": {
+          "level": "general",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Global literature context, not station-specific attribution No verified site generation-linked lifecycle inventory or replacement-generation counterfactual",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.climate.not_station_emissions",
+        "statement": "This possible climate advantage is not a measurement of Surry’s emissions or emissions avoided.",
+        "target": "climate",
+        "paragraph_index": 0,
+        "span": [
+          149,
+          244
+        ],
+        "display_span": "This possible climate advantage is not a measurement of Surry’s emissions or emissions avoided.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [
+          "ipcc_context"
+        ],
+        "evidence_kind": "general_context",
+        "sources": [],
+        "period": {
+          "label": "IPCC 2014 literature assessment; not a Surry observation period",
+          "start": null,
+          "end": null
+        },
+        "geography": "Global technology literature; not measurements from Surry or its water body",
+        "scope": {
+          "level": "general",
+          "plant_id_eia": 3806
+        },
+        "limitation": "Global literature context, not station-specific attribution No verified site generation-linked lifecycle inventory or replacement-generation counterfactual",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.climate.site_gap",
+        "statement": "No station-specific climate benefit or harm is established by this report.",
+        "target": "climate",
+        "paragraph_index": 1,
+        "span": [
+          0,
+          74
+        ],
+        "display_span": "No station-specific climate benefit or harm is established by this report.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.climate.scenarios_not_observations",
+        "statement": "User-entered emissions scenarios elsewhere in the project are illustrations, not measured Surry outcomes.",
+        "target": "climate",
+        "paragraph_index": 1,
+        "span": [
+          75,
+          180
+        ],
+        "display_span": "User-entered emissions scenarios elsewhere in the project are illustrations, not measured Surry outcomes.",
+        "text_role": "method_explanation",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.unknowns.monitoring_needed",
+        "statement": "We still need current intake surveys, receiving-water measurements, habitat studies, chemical tests and appropriate exposure assessments.",
+        "target": "unknowns",
+        "paragraph_index": 0,
+        "span": [
+          0,
+          137
+        ],
+        "display_span": "We still need current intake surveys, receiving-water measurements, habitat studies, chemical tests and appropriate exposure assessments.",
+        "text_role": "evidence_gap",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.unknowns.no_score",
+        "statement": "The evidence does not support a single environmental score.",
+        "target": "unknowns",
+        "paragraph_index": 0,
+        "span": [
+          138,
+          197
+        ],
+        "display_span": "The evidence does not support a single environmental score.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      },
+      {
+        "statement_id": "eia_3806.unknowns.absence_not_safety",
+        "statement": "Missing observations and a failure to detect harm must never be read as proof of safety.",
+        "target": "unknowns",
+        "paragraph_index": 0,
+        "span": [
+          198,
+          286
+        ],
+        "display_span": "Missing observations and a failure to detect harm must never be read as proof of safety.",
+        "text_role": "scope_limit",
+        "parent_claim_ids": [],
+        "evidence_kind": null,
+        "sources": [],
+        "period": {
+          "label": "Scope of reviewed collection as of 15 November 2026; no observation period asserted",
+          "start": null,
+          "end": null
+        },
+        "geography": "Surry / James River, Virginia; historical scope only",
+        "scope": {
+          "level": "site",
+          "plant_id_eia": 3806
+        },
+        "limitation": "This describes the limits/method of this reviewed collection, not proof about the physical environment.",
+        "review_basis": "src/model/environment_evidence/CAPABILITY_AUDIT_RU.md, sections 1, 3–5; explicit source-to-span review, not expert signoff",
+        "counterevidence": []
+      }
+    ],
+    "omitted_system_statement_ids": []
+  }
+}

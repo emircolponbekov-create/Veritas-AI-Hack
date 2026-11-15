@@ -1,0 +1,27 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+node_modules/
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.aws/
+.ssh/
+*.pem
+*.key
+# Editor and local working files
+.vscode/
+.idea/
+.codex/
+.agents/
+*.log
+*.local.*
+# Generated bundles
+submission/*.zip
+submission/*.zip.sha256

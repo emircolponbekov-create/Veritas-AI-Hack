@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-15T16:53:52.082865+00:00",
+  "tests": {
+    "site_support": 11,
+    "existing_environment_report": 10,
+    "existing_ui_environment": 8,
+    "total": 29,
+    "ui_apptest_note": "Existing test-only non-running event-loop workaround; not visual browser QA"
+  },
+  "sites": 66,
+  "systems": 102,
+  "verified_measurement_systems": 38,
+  "verified_model_systems": 17,
+  "catalog_version": "020eec03bf133f1ce13188441b17eafa7229703c2f9d0f9d06fcff9ab76e7271",
+  "dependencies": 337,
+  "source_files_unchanged": 348,
+  "source_files_changed": [],
+  "contract_previous_bytes_retained": true,
+  "contract_previous_sha256": "25ac3ef7ae511a3c6b741c2e0691c627fa1e683fe789a477a05623c9e0287474",
+  "no_training_import": true,
+  "no_streamlit_import_in_provider": true,
+  "no_new_packages": true,
+  "unverified": [
+    "Future UI feature wiring and visual design",
+    "Current physical pipe map and hydrodynamic plume",
+    "Expert health/ecology assessment",
+    "Present-day observations beyond historical source coverage"
+  ]
+}

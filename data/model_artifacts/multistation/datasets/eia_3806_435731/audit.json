@@ -1,0 +1,39 @@
+{
+  "cooling_types": [
+    "O",
+    "ON"
+  ],
+  "dataset_id": "eia_3806_435731",
+  "excluded_months": [
+    "2021-09",
+    "2021-12",
+    "2024-08",
+    "2025-11"
+  ],
+  "input_sha256": "49d0ccdb17bd32e1155a6001fac24d19785851fe1280d157098788ac1289c82a",
+  "limitations": [
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "methods": {
+    "MISSING": 2,
+    "Measured continuously with a thermometer": 188,
+    "Other (provide explanation in Schedule 9)": 2
+  },
+  "missing": {
+    "cooling_hours": 1,
+    "cooling_type_reported": 36,
+    "flow_rate_method": 1,
+    "temperature_method": 2
+  },
+  "missing_internal_months": [],
+  "review_months": {},
+  "split_counts": {
+    "test": 22,
+    "train": 142,
+    "validation": 24
+  },
+  "status": "ready_for_model_check",
+  "validation": "identity, source, units, arithmetic, strict flags, fixed splits; no fitting or imputation"
+}

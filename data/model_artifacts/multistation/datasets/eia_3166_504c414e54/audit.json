@@ -1,0 +1,30 @@
+{
+  "cooling_types": [
+    "O",
+    "ON"
+  ],
+  "dataset_id": "eia_3166_504c414e54",
+  "excluded_months": [],
+  "input_sha256": "cc9e19be16a456956c6a3c99771857c35818359a90b4f719f1df54ae5b98f0b0",
+  "limitations": [
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "methods": {
+    "Measured at intervals (for example, daily) with a thermometer": 84,
+    "Measured continuously with a thermometer": 108
+  },
+  "missing": {
+    "cooling_type_reported": 36
+  },
+  "missing_internal_months": [],
+  "review_months": {},
+  "split_counts": {
+    "test": 24,
+    "train": 144,
+    "validation": 24
+  },
+  "status": "ready_for_model_check",
+  "validation": "identity, source, units, arithmetic, strict flags, fixed splits; no fitting or imputation"
+}

@@ -1,0 +1,44 @@
+{
+  "cooling_types": [
+    "O",
+    "ON"
+  ],
+  "dataset_id": "eia_6038_504c414e54",
+  "excluded_months": [
+    "2010-01",
+    "2010-02",
+    "2010-03",
+    "2010-04",
+    "2010-05",
+    "2010-06",
+    "2010-07",
+    "2010-08",
+    "2010-09",
+    "2010-10",
+    "2010-11",
+    "2010-12"
+  ],
+  "input_sha256": "3074d20d655131c694987f2d69e4046b473655a26b692b65baeb9ee63bd952ba",
+  "limitations": [
+    "reported_measurement_not_independent_sensor_validation",
+    "historical_monthly_retrospective_only_no_ecosystem_inference",
+    "historical_cooling_metadata_incomplete_or_changed"
+  ],
+  "methods": {
+    "Measured continuously with a thermometer": 180,
+    "Other (provide explanation in Schedule 9)": 12
+  },
+  "missing": {
+    "cooling_type_reported": 36,
+    "flow_rate_method": 2
+  },
+  "missing_internal_months": [],
+  "review_months": {},
+  "split_counts": {
+    "test": 24,
+    "train": 132,
+    "validation": 24
+  },
+  "status": "ready_for_model_check",
+  "validation": "identity, source, units, arithmetic, strict flags, fixed splits; no fitting or imputation"
+}

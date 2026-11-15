@@ -1,0 +1,74 @@
+{
+  "report_version": 1,
+  "plant_id_eia": 6011,
+  "station_name": "Calvert Cliffs Nuclear Power Plant",
+  "language": "en",
+  "status": "insufficient_evidence",
+  "as_of": "2026-11-15",
+  "period_label": "No reviewed reporting period available",
+  "summary": "No station-specific environmental evidence has been approved in this module. No benefit, harm or safety conclusion is made.",
+  "sections": [
+    {
+      "id": "water",
+      "title": "Water",
+      "status": "insufficient_evidence",
+      "paragraphs": [
+        "Insufficient evidence for this station to draw a conclusion."
+      ],
+      "claim_ids": [],
+      "references": [],
+      "periods": [],
+      "limitations": []
+    },
+    {
+      "id": "animals_plants",
+      "title": "Animals and plants",
+      "status": "insufficient_evidence",
+      "paragraphs": [
+        "Insufficient evidence for this station to draw a conclusion."
+      ],
+      "claim_ids": [],
+      "references": [],
+      "periods": [],
+      "limitations": []
+    },
+    {
+      "id": "people",
+      "title": "People",
+      "status": "insufficient_evidence",
+      "paragraphs": [
+        "Insufficient evidence for this station to draw a conclusion."
+      ],
+      "claim_ids": [],
+      "references": [],
+      "periods": [],
+      "limitations": []
+    },
+    {
+      "id": "climate",
+      "title": "Climate",
+      "status": "insufficient_evidence",
+      "paragraphs": [
+        "Insufficient evidence for this station to draw a conclusion."
+      ],
+      "claim_ids": [],
+      "references": [],
+      "periods": [],
+      "limitations": []
+    },
+    {
+      "id": "unknowns",
+      "title": "What remains unknown",
+      "status": "insufficient_evidence",
+      "paragraphs": [
+        "Insufficient evidence for this station to draw a conclusion."
+      ],
+      "claim_ids": [],
+      "references": [],
+      "periods": [],
+      "limitations": []
+    }
+  ],
+  "expert_review_status": "not_performed",
+  "method": "curated_evidence_rules_not_trained_safety_model"
+}

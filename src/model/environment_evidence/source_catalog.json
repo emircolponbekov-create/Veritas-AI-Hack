@@ -1,0 +1,108 @@
+{
+  "eia_surry_cw1": {
+    "title": "EIA/PUDL Surry CW1 monthly records, 2010–2025",
+    "url": "https://data.catalyst.coop/preview/pudl/_core_eia923__monthly_cooling_system_information",
+    "role": "government_reports_via_pudl",
+    "scope": "site",
+    "plant_ids": [
+      3806
+    ],
+    "access_state": "reviewed_content",
+    "published_on": null,
+    "publication_label": "Reporting months 2010–2025; frozen local snapshot imported 14 November 2026",
+    "local_path": "data/surry_cw1_monthly.csv",
+    "local_sha256": "49d0ccdb17bd32e1155a6001fac24d19785851fe1280d157098788ac1289c82a",
+    "accessed_on": "2026-11-15",
+    "retrieval": "Original local CSV checked against raw PUDL Parquet through existing MODEL adapter",
+    "license": "EIA government data; PUDL CC-BY-4.0; acknowledge EIA/PUDL and transformations"
+  },
+  "epa_intakes_2001": {
+    "title": "US EPA cooling-water intake study (2001), pp. 5-4–5-5 and A-6",
+    "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20002QWR.TXT",
+    "role": "regulator_synthesis",
+    "scope": "site",
+    "plant_ids": [
+      3806
+    ],
+    "access_state": "reviewed_content",
+    "published_on": "2001-11-09",
+    "publication_label": "EPA-821-R-01-036, November 2001",
+    "accessed_on": "2026-11-15",
+    "retrieval": "Full EPA text, Surry paragraph, Chapter 5 and Appendix A reviewed",
+    "upstream_origin": "EPA reproduces historical studies via EPRI 1999; not a new independent field sample",
+    "license": "US government publication; preserve EPA attribution"
+  },
+  "operator_legacy": {
+    "title": "Surry historical applicant environmental report, section 6.3",
+    "url": "https://www.nrc.gov/cdn/legacy/reactors/operating/licensing/renewal/applications/northanna-surry/surry_env.pdf",
+    "role": "operator",
+    "scope": "site",
+    "plant_ids": [
+      3806
+    ],
+    "access_state": "reviewed_content",
+    "published_on": null,
+    "publication_label": "Legacy renewal applicant report; exact publication date not established here",
+    "accessed_on": "2026-11-15",
+    "retrieval": "NRC-hosted applicant PDF, printed pp. 6-3 and 6-11, section 6.3 and reference 6.3-1",
+    "upstream_origin": "Virginia Electric & Power Company (Dominion); 1980 intake report and 1970s studies cited",
+    "license": "Applicant-authored document; link and paraphrase only; no assumed public-domain license"
+  },
+  "vdh_2024": {
+    "title": "Virginia Department of Health environmental monitoring, 2024",
+    "url": "https://www.vdh.virginia.gov/content/uploads/sites/7/2025/05/2024-Final-Report.pdf",
+    "role": "state_monitoring",
+    "scope": "site",
+    "plant_ids": [
+      3806
+    ],
+    "access_state": "reviewed_content",
+    "published_on": null,
+    "publication_label": "2024 annual data, hosted under May 2025 path; exact issue date not inferred from URL",
+    "accessed_on": "2026-11-15",
+    "retrieval": "PDF text and rendered pages 3, 10 and 24 inspected; 1-based printed/PDF pages",
+    "upstream_origin": "State sampling; sample release explanation attributed in footnote to station count-room personnel",
+    "license": "State government report; link and limited paraphrase; no blanket license inferred"
+  },
+  "ipcc_ar5": {
+    "title": "IPCC 2014 electricity life-cycle review, Table A.III.2",
+    "url": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf",
+    "role": "scientific_assessment",
+    "scope": "general",
+    "plant_ids": [],
+    "access_state": "reviewed_content",
+    "published_on": null,
+    "publication_label": "2014 IPCC AR5 WGIII Annex III, p. 1335",
+    "accessed_on": "2026-11-15",
+    "retrieval": "Official PDF text; Nuclear, Coal-PC and Gas-Combined-Cycle lifecycle rows checked",
+    "license": "IPCC/Cambridge published assessment; link and paraphrase; no blanket license assumed"
+  },
+  "nrc_final_2020": {
+    "title": "NRC Surry final environmental assessment, April 2020",
+    "url": "https://www.nrc.gov/docs/ML2007/ML20071D538.pdf",
+    "role": "regulator",
+    "scope": "site",
+    "plant_ids": [
+      3806
+    ],
+    "access_state": "body_unavailable",
+    "published_on": null,
+    "publication_label": "NUREG-1437 Supplement 6 Second Renewal, final, April 2020",
+    "accessed_on": "2026-11-15",
+    "retrieval": "Official NRC index identifies final report; direct PDF returned 403. No substantive final-body conclusion admitted."
+  },
+  "nrc_draft_2019": {
+    "title": "NRC Surry DRAFT environmental assessment, October 2019",
+    "url": "https://downloads.regulations.gov/NRC-2018-0280-0019/attachment_1.pdf",
+    "role": "regulator_draft",
+    "scope": "site",
+    "plant_ids": [
+      3806
+    ],
+    "access_state": "draft_only",
+    "published_on": null,
+    "publication_label": "October 2019 DRAFT, not April 2020 final",
+    "accessed_on": "2026-11-15",
+    "retrieval": "Government mirror cover/title and March 2019 site-audit paragraphs read; no final/current impact inference used"
+  }
+}
