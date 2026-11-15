@@ -2,7 +2,7 @@
 
 Official [Project Briefs](https://drive.google.com/file/d/15tYD48XRmCgWbk1_lLDtc8lebi6qm-4-/view), sections 2, 3 and 5.
 
-- Confirm both participants' real names and actual contributions in PROJECT_SUMMARY.md and CREDITS.md. Enter each participant's name, email and school in the official form; emails and schools do not need to be public here.
+- Use the confirmed names **Emir Cholponbekov** and **Umar Aldayarov** consistently. Their contributions are recorded in PROJECT_SUMMARY.md and CREDITS.md. Enter each participant's name, email and school in the official form; emails and schools do not need to be public here.
 - Both participants should understand the method and confirm that their project work was done during the hackathon. Repository timestamps alone do not prove this.
 - Run the README installation command, then `python submission/verify_distribution.py --results` using that environment. Do not retrain models or regenerate manifests to hide an integrity error.
 - Rehearse the app: Surry CW1 report and source disclosures; a missing/excluded month; Calvert Cliffs; Surry CW2; a second site; and a narrow window. Distinguish saved ML estimates from reported measurements and source-based ecological reports.

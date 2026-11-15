@@ -28,9 +28,9 @@ No external pretrained model or AI API is used for temperature estimates. Models
 
 **OpenAI ChatGPT / Codex**: assistance with data discovery/import/auditing, implementation of the model pipeline and UI, debugging, verification, explanations, design and submission drafts. [OpenAI](https://openai.com/), [Codex](https://openai.com/codex/). AI-generated outputs require review; the student team must understand the method, confirm its own contributions, and credit any additional tools actually used. Do not add an unverified model/version claim.
 
-**Participant 1:** [NAME]; actual contribution: [FILL IN].  
-**Participant 2:** [NAME]; actual contribution: [FILL IN].  
-**Other actual sources/tools, if any:** [FILL IN OR REMOVE AFTER CHECKING].
+**Emir Cholponbekov:** Found datasets and prepared them for model training; built the website and was responsible for keeping it working.  
+**Umar Aldayarov:** Wrote and reviewed code, trained the models and populated the GitHub repository.  
+**Shared work:** Developed the project ideas, tested the prototype and worked together on recording the demo video.
 
 The prototype's own reuse license has not been chosen by the team; none is silently granted here. Third-party packages are not vendored in the release; installers supply their license notices. No participant emails or schools are stored in this public-facing credit file; enter them privately in the official form.
 

@@ -1,6 +1,6 @@
 # Nuclear Water & Climate Lab
 **Track:** AI + Climate · **Our own idea**  
-**Team:** [PARTICIPANT 1 NAME] and [PARTICIPANT 2 NAME]
+**Team:** Emir Cholponbekov and Umar Aldayarov
 
 ## The problem
 A resident or student looking at an energy system's water use needs to distinguish reported cooling-water temperatures from model estimates and unsupported environmental claims. Our question is specific: can a simple model estimate a completed month's intake-to-discharge temperature difference better than two train-only median rules? This connects to the water side of energy-system climate adaptation; it does not measure greenhouse-gas reductions or establish a causal climate impact.
@@ -19,6 +19,6 @@ Saved exports independently verify 17 evaluated systems: Ridge beats the better 
 For Surry in December 2025, measured ΔT is 6.667°C and the saved model estimate is 11.029°C: absolute error 4.362°C. Intake and season alone cannot represent every operational change; that is a possible explanation, not a proven cause of this error. Monthly averages also hide short-lived peaks. Cooling-system ΔT is not water-body warming, harm or safety for organisms or people, and is not transferable to Akkuyu.
 
 ## Contribution, next steps and sources
-**[FILL IN the actual contribution of participant 1.]** **[FILL IN the actual contribution of participant 2.]** ChatGPT/Codex assisted data checks, code, tests and writing; the team must verify and explain the work. Next steps would be independent subject-matter review of flagged records and a separately defined, future evaluation period without reusing this test for tuning. Idealized mixing, volume heat-balance and literature lifecycle scenarios are separate sensitivity tools; uranium mining/milling calculations remain unavailable. Final participant details and submission access still need team verification.
+**Emir Cholponbekov** found and prepared the training data, built the website and was responsible for its operation. **Umar Aldayarov** wrote and reviewed code, trained the models and populated the GitHub repository. **Together**, we developed the ideas, tested the prototype and worked on recording the demo video. ChatGPT/Codex assisted data checks, code, tests and writing; the team must verify and explain the work. Next steps would be independent subject-matter review of flagged records and a separately defined, future evaluation period without reusing this test for tuning. Idealized mixing, volume heat-balance and literature lifecycle scenarios are separate sensitivity tools; uranium mining/milling calculations remain unavailable. Participant emails and schools are provided privately in the submission form.
 
 Data: [EIA-923](https://www.eia.gov/electricity/data/eia923/) and [PUDL](https://github.com/catalyst-cooperative/pudl). Software: pandas, NumPy, scikit-learn, matplotlib, PyArrow and Streamlit. AI assistance: [OpenAI ChatGPT/Codex](https://openai.com/). Full attribution and licenses: CREDITS.md. Visible outputs in RESULTS_REVIEW.ipynb are a local review of saved artifacts, not a fresh training run.

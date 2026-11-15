@@ -39,7 +39,12 @@ RESULTS_REVIEW.ipynb loads and verifies existing artifacts; visible outputs were
 ## Boundaries and fair use
 These data cover a local U.S. snapshot, not all plants worldwide. Monthly system ΔT does not describe peaks, downstream mixing, organisms, human health, or safety. Surry is not a model for Akkuyu. The project does not estimate avoided CO₂, a causal climate effect, or a full fuel life cycle. Residents can use it to ask better questions and examine evidence, not to decide that a site is safe or unsafe.
 
+## Team contributions
+
+- **Emir Cholponbekov:** Found datasets and prepared them for model training; built the website and was responsible for keeping it working.
+- **Umar Aldayarov:** Wrote and reviewed code, trained the models and populated the GitHub repository.
+- **Together:** Developed the project ideas, tested the prototype and worked together on recording the demo video.
+
 ## Team questions to answer before submitting
-- [FILL IN] What did each participant actually contribute?
 - Can each participant explain one row, one graph, why Calvert's Ridge is worse, and why that remains in the project?
 - Can both explain why we cannot promise safety, claim significance, or improve models using this already-viewed test?

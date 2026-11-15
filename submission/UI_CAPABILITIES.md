@@ -47,8 +47,9 @@ actual checks and limits of the current correction.
 
 ## Still for the team
 
-Confirm participant names/contributions, review the updated demo and summary,
+Participant names and contributions have been supplied by the team and recorded
+in the README, project summary and credits. Review the demo and summary,
 rehearse with a normal local server, and check narrow-screen navigation and the
-motion switch. Other narratives/notebook/team details are not certified by this
-UI handoff. Final sharing, access checks and submission require team action;
-none was performed. Localhost is not a judge-accessible URL.
+motion switch. Enter participant emails and schools privately in the official
+form and verify the final submission links. Competition form submission remains
+a separate team action. Localhost is not a judge-accessible URL.
