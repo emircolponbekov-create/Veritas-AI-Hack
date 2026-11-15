@@ -1,0 +1,4 @@
+# Reviewed evidence and frozen model artifacts have byte-level SHA-256 manifests.
+# Keep the committed bytes identical on Windows, macOS and Linux. In particular,
+# do not normalize their mixed, original LF/CRLF line endings during add/checkout.
+* -text

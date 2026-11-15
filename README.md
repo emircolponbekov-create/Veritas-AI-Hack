@@ -1,9 +1,16 @@
-[README.md](https://github.com/user-attachments/files/34885397/README.md)
 # Nuclear Water & Climate Lab
 
 An interactive explorer of nuclear-power cooling water, historical measurements and environmental evidence.
 
 Built for the **Veritas AI International High School Hackathon 2026**, track **AI + Climate**.
+
+[Project write-up](submission/PROJECT_SUMMARY.md) · [Results notebook](submission/RESULTS_REVIEW.ipynb) · [Credits](submission/CREDITS.md)
+
+## The problem and user
+
+For a resident or student exploring an energy system's water use, reported temperatures, model estimates and environmental claims can be difficult to distinguish. This prototype brings them together while keeping their evidence and limitations visible.
+
+Our own question is whether a simple model can estimate a completed month's cooling-system temperature difference better than two median rules. The climate connection is energy-system water use and adaptation; this tool does not measure emissions reductions or prove a causal climate impact.
 
 ## Explore
 
@@ -27,7 +34,15 @@ python -m venv .venv
 On macOS/Linux, use `.venv/bin/python` in place of `.\.venv\Scripts\python.exe`.
 Open the local URL printed by Streamlit. A localhost address is not a public demo link.
 Viewing the bundled data needs no API key or model retraining. First-time dependency installation needs internet.
-The review notebook additionally needs matplotlib; model development needs scikit-learn. See the module guides before running training or writer commands.
+The review notebook additionally needs matplotlib; model development needs scikit-learn. The app and the checks below use the pinned runtime dependencies and do not train models.
+
+## Verify the downloaded project
+
+```powershell
+.\.venv\Scripts\python.exe submission/verify_distribution.py --results
+```
+
+This checks original source/evidence hashes, the saved notebook outputs and all 17 saved model comparisons. Keep `.gitattributes`: the frozen files have byte-level manifests, so Git must preserve their original line endings on every operating system. A hash mismatch is an error to investigate, not a reason to regenerate the manifests.
 
 ## Model and results
 
@@ -54,6 +69,10 @@ Environmental reports use curated sources and rules; they are separate from the 
 Evidence periods vary, specialist review has not been performed, and findings are not transferred to unstudied stations.
 Process artwork is illustrative. Scenario calculations are hypothetical; uranium mining/milling estimates are unavailable without verified coefficients.
 
+## Next steps
+
+Obtain independent subject-matter review of flagged measurements and ecological evidence. Evaluate any future model changes on a separately defined future period, without tuning on the current test set.
+
 ## Documentation
 
 - [Project write-up](submission/PROJECT_SUMMARY.md)
@@ -64,6 +83,9 @@ Process artwork is illustrative. Scenario calculations are hypothetical; uranium
 - [Interface guide](src/ui/README.md)
 - [Scenario guide](src/fuel/README.md)
 - [Code explanation](submission/CODE_WALKTHROUGH.md)
+- [Submission checklist](submission/BEFORE_SUBMITTING.md)
+- [Verification record](submission/VERIFICATION.md)
 
 Participant names and individual contributions still need team confirmation before final submission. Enter participant emails and schools in the official form rather than this public repository.
 Third-party data and software retain their own terms; no new project-wide reuse license is implied.
+

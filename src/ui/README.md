@@ -50,8 +50,7 @@ requires it: `VERITAS_UI_NO_SOCKET_TESTS=1`. It is never a production setting.
 Run `python -B -m unittest discover -s tests/ui -v` with the UI interpreter.
 MODEL read-only checks are `test_site_support.py` and `test_environment_report.py`;
 scenario checks are under `tests/fuel`. Do not run broad MODEL discovery, which
-includes training/writer tests. See submission/PACKAGE_CHECKS.json for actual
-results and verification limits of this release.
+includes training/writer tests. See submission/VERIFICATION.md for the current distribution checks and limits.
 
 The implementation pass visually checked desktop and 390 px width, evidence
 expansion, keyboard stage/month selection and an excluded month. During the
@@ -62,7 +61,8 @@ This is not a claim of fresh visual QA. Repeat the checklist on the user's PC.
 Read [STORY_UI_WALKTHROUGH_RU.md](STORY_UI_WALKTHROUGH_RU.md) for the code and
 [../../submission/UI_CAPABILITIES.md](../../submission/UI_CAPABILITIES.md) for
 the release scope. The older release ZIP is preserved; the current version is
-`submission/nuclear-water-release-20261115-interactive.zip`. Other team materials still need final review.
+an earlier local archive. This GitHub source/data distribution does not require that ZIP.
+Use the root README for current installation and verification instructions. Historical notes below describe earlier work.
 
 ---
 

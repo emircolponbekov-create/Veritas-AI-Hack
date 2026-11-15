@@ -31,21 +31,19 @@ Specialist ecological/health review remains not performed. Scenarios are
 hypothetical, not station measurements; uranium mining/milling is still blocked
 without verified coefficients. No source/model/evidence publication is changed.
 
-## Package and verification
+## Distribution and verification
 
-Current archive: `nuclear-water-release-20261115-interactive.zip`.
-The previous `nuclear-water-release.zip` remains unchanged. The explicit-file
-packager includes UI modules/CSS/JS/artwork, MODEL support/evidence/publications,
-registered observations/saved results, scenario modules, tests and dependencies.
-It excludes environments, caches, logs, credentials and ZIP members. It checks
-CRC, exact member set and member SHA-256/byte counts. The sibling .sha256 file
-checks the outer ZIP. Runtime setup is in ../src/ui/README.md; no training is
-needed. See PACKAGE_CHECKS.json for actual checks, including unavailable ones.
+This GitHub repository contains the source, frozen data, saved model exports,
+reviewed evidence, artwork, notebook outputs and tests. Historical ZIP names in
+module walkthroughs refer to earlier local packaging; those ZIPs are not needed
+to run the repository. Follow the root README for a fresh environment.
 
-The implementation pass observed desktop and 390 px rendering; the finishing
-retry could not reconnect the browser or confirm a normal server because of
-restricted local sockets. AppTest does not verify CSS/JavaScript/rendering.
-Fresh dependency installation and a fully fresh-machine run were not tested.
+Run `python submission/verify_distribution.py --results` with the installed
+runtime dependencies. The command is read-only and checks original integrity
+manifests and all saved model comparisons. `.gitattributes` preserves the exact
+bytes of frozen inputs and evidence across Git checkouts. Do not rewrite hashes
+to suppress an integrity failure. See [VERIFICATION.md](VERIFICATION.md) for the
+actual checks and limits of the current correction.
 
 ## Still for the team
 
